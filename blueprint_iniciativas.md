@@ -1,6 +1,8 @@
 Visão Geral da Arquitetura Macro Proprietária (Atualizada com Iniciativas e Atividades)
 ---------------------------------------------------------------------------------------
 
+<img width="1348" height="3392" alt="blueprint_macro_arquitetura_gcb" src="https://github.com/user-attachments/assets/7aeef930-a6f3-449c-950e-b6e139a3a7c8" />
+
 ### 1. Camada de Frontend
 
 #### 🖥️ Websites & Apps
