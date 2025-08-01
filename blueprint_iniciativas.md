@@ -532,17 +532,25 @@ CRITÉRIOS DE DECISÃO BUY vs MAKE
 #### **PARA O GCB:**
 
 ✅ **Capex Reduzido**: -40% vs modelo tradicional  
+
 ✅ **Risk Sharing**: Parceiro co-investe no sucesso  
+
 ✅ **Faster TTM**: AWS native = 50% mais rápido 
+
 ✅ **Innovation Access**: AWS latest services first 
+
 ✅ **Talent Access**: Certified professionals (700+ AWS certs)
 
 #### **PARA O PARCEIRO:**
 
-✅ **Upside Unlimited**: Success fees escalam com performance 
+✅ **Upside Unlimited**: Success fees escalam com performance
+
 ✅ **Strategic Partnership**: Influência decisões tecnológicas  
+
 ✅ **AWS Alliance Benefits**: MDF, training, co-sell opportunities 
+
 ✅ **Reference Case**: GCB como showcase global 
+
 ✅ **Recurring Revenue**: 3-year engagement + extension potential
 
 #### **🎯 WINNING STRATEGY:**
