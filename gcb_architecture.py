@@ -7,7 +7,8 @@ Transformação Digital Full-Stack com foco em Buy vs Make
 from diagrams import Cluster, Diagram, Edge
 from diagrams.aws.compute import Lambda, ECS
 from diagrams.aws.database import RDS, Dynamodb, Redshift
-from diagrams.aws.integration import SQS, SNS, Eventbridge, APIGateway
+from diagrams.aws.integration import SQS, SNS, Eventbridge
+from diagrams.aws.mobile import APIGateway
 from diagrams.aws.analytics import Quicksight, Kinesis
 from diagrams.aws.ml import Sagemaker, Personalize
 from diagrams.aws.storage import S3
@@ -15,17 +16,20 @@ from diagrams.aws.network import CloudFront, ELB
 from diagrams.aws.security import IAM, Cognito
 from diagrams.aws.management import Cloudwatch
 
-from diagrams.saas.analytics import Snowflake, Tableau
+from diagrams.saas.analytics import Snowflake
+from diagrams.onprem.analytics import Tableau
 from diagrams.saas.chat import Slack
 from diagrams.saas.communication import Twilio
 from diagrams.saas.identity import Okta
-from diagrams.saas.payments import Stripe
-from diagrams.onpremise.database import Oracle
-from diagrams.onpremise.inmemory import Redis
-from diagrams.onpremise.network import Nginx
+from diagrams.generic.blank import Blank as Stripe
+from diagrams.onprem.database import Oracle
+from diagrams.onprem.inmemory import Redis
+from diagrams.onprem.network import Nginx
 from diagrams.generic.blank import Blank
 from diagrams.generic.database import SQL
 from diagrams.generic.compute import Rack
+
+from diagrams.generic.device import Mobile
 
 # Configurações do diagrama
 graph_attr = {
@@ -46,7 +50,7 @@ with Diagram("GCB Blueprint - Arquitetura Transformação Digital",
         with Cluster("E-commerce & Digital"):
             ecommerce = Blank("Portal E-commerce\n(Salesforce/Adobe)")
             b2b_portal = Blank("Portal B2B\n(Salesforce B2B)")
-            mobile_app = Blank("App Mobile\n(PWA)")
+            mobile_app = Mobile("App Mobile\n(PWA)")
             seller_cms = Blank("CMS Sellers\n(Adobe Experience)")
         
         with Cluster("Ponto de Venda"):
