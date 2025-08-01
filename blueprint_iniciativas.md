@@ -1,337 +1,554 @@
-Visão Geral da Arquitetura Macro Proprietária (Atualizada com Iniciativas e Atividades)
----------------------------------------------------------------------------------------
+Blueprint Tecnológico GCB - Análise Buy vs Make por Camadas
+===========================================================
 
-<img width="1348" height="3392" alt="blueprint_macro_arquitetura_gcb" src="https://github.com/user-attachments/assets/7aeef930-a6f3-449c-950e-b6e139a3a7c8" />
+EXECUTIVE SUMMARY - RECOMENDAÇÕES ESTRATÉGICAS
+----------------------------------------------
 
-### 1. Camada de Frontend
+### 🟢 PRIORIDADE ALTA - BUY (COTS) - 70% das aplicações
 
-#### 🖥️ Websites & Apps
+**Benefícios**: Redução de 40-60% do TCO, time-to-market acelerado, manutenção terceirizada **Sistemas Core**: OMS, WMS, PIM, CRM, TMS, Gateway Pagamentos, Pricing
 
-*   **Iniciativas:**
-    *   I03 - A3.3: Melhorias na jornada de PDP (reviews, fechamento, etc.) [E02, E04]
-        
-    *   I03 - A3.4: Redesenho do Customer Journey (carrinho, checkout) [E01, E02, E03]
-        
-    *   I03 - A3.12: Experiência personalizada da jornada do cliente [E04]
-        
-    *   I03 - A3.5: Motor com AI para recomendação de produtos [E04]
-        
-    *   I04 - A4.3: Inclusão de ofertas de serviços na jornada do cliente [-]
-        
-*   **Estruturantes:** E01, E02, E03, E04
-    
-*   **Sugestão:** 🏗️ Make
-    
+### 🟡 PRIORIDADE MÉDIA - HYBRID (Buy + Customize) - 20% das aplicações
 
-#### 🧠 Motor de Recomendação AI
+**Benefícios**: Balance entre velocidade e diferenciação competitiva **Diferenciadores**: E-commerce, CDC, Analytics Avançados, Experiência Cliente
 
-*   **Iniciativas:**
-    *   I03 - A3.5: Desenvolvimento de motor com AI de recomendação
-        
-    *   I04 - A4.2: Motor de recomendações de serviços (Visão Relacional das Capacidades)
-        
-*   **Estruturantes:** E01, E04
-    
-*   **Sugestão:** 🏗️ Make
-    
+### 🔴 PRIORIDADE BAIXA - MAKE (Custom) - 10% das aplicações
+
+**Justificativa**: Apenas para diferenciadores únicos do negócio GCB **Aplicações**: Integrações específicas, Configurações regionais/bandeiras
 
 * * *
 
-### 2. Camada de Backend e Integrações
+CAMADA 1: EXPERIÊNCIA DO CLIENTE (Frontend/UI)
+----------------------------------------------
 
-#### 🔁 BFF (.NET / Java)
+### 🟢 **RECOMENDAÇÃO BUY - COTS**
 
-*   **Iniciativas:**
-    *   I03 - A3.6: Integração e-commerce com OMS
-        
-    *   I03 - A3.8: Integração nova plataforma com ERP e WMS
-        
-    *   I03 - A3.9: CMS para base de Sellers
-        
-*   **Estruturantes:** E01, E02
-    
-*   **Sugestão:** 🏗️ Make
-    
-
-#### 🌐 Motor de Busca / Recomendação
-
-*   **Iniciativas:**
-    *   I03 - A3.1: Redesenho da jornada de busca com novo catálogo [E01]
-        
-*   **Estruturante:** E01
-    
-*   **Sugestão:** 🏗️ Make
-    
-
-#### 📦 CMS
-
-*   **Iniciativas:**
-    *   I03 - A3.9: Implementação de novo CMS para base de Sellers
-        
-*   **Estruturante:** E01
-    
-*   **Sugestão:** 🛠️ Buy
-    
-
-* * *
-
-### 3. Middleware e Sistemas de Apoio
-
-#### 🧠 Middleware Central
-
-*   **Iniciativas:**
-    *   I01 - A1.1: Integração dos canais com nova base centralizada de clientes [E04]
-        
-    *   I01 - A1.4: Integração com hub de pedidos unificado [E02]
-        
-    *   I02 - A2.4: Conciliação de pagamentos [E03]
-        
-    *   I03 - A3.2: Integração com PIM [E01, E02]
-        
-    *   I04 - A4.4 / A4.6: Hub de serviços unificado configurável
-        
-*   **Estruturantes:** E01, E02, E03, E04
-    
-*   **Sugestão:** 🏗️ Make
-    
-
-#### 🏷️ PIM (Product Information Management)
-
-*   **Iniciativas:**
-    *   I03 - A3.2: Integração com PIM [E01, E02]
-        
-*   **Estruturantes:** E01, E02
-    
-*   **Sugestão:** 🛠️ Buy
-    
-
-#### 📦 OMS
-
-*   **Iniciativas:**
-    *   I01 - A1.2: Implementação de OMS e gestão de pedidos [E02]
-        
-    *   I02 - A2.7: Integração com OMS
-        
-    *   I06 - A6.7: OMS para pedidos 3P
-        
-    *   I08 - A8.6: Atendimento com OMS
-        
-*   **Estruturante:** E02
-    
-*   **Sugestão:** 🛠️ Buy
-    
-
-#### 🏭 ERP
-
-*   **Iniciativas:**
-    *   I01 - A1.9: Integração Manhattan com ERP e remoção de legado
-        
-    *   I02 - A2.10: Integração retaguarda com ERP e WMS
-        
-    *   I03 - A3.8: Nova plataforma com ERP/WMS
-        
-    *   I09 - A9.8: Conciliação bancária com ERP
-        
-*   **Estruturantes:** E02, E03
-    
-*   **Sugestão:** 🛠️ Buy
-    
-
-#### 🏪 WMS
-
-*   **Iniciativas:**
-    *   I01 - A1.8: Integração WMS com S&OP
-        
-    *   I06 - A6.5: S&OP + WMS como fonte única de estoques
-        
-*   **Estruturante:** E03
-    
-*   **Sugestão:** 🛠️ Buy
-    
-
-#### 🏢 SCM / S&OP
-
-*   **Iniciativas:**
-    *   I06 - A6.1: Ferramentas de SCM e logística
-        
-    *   I06 - A6.10: SCM + seller fulfillment
-        
-*   **Estruturante:** E03
-    
-*   **Sugestão:** 🏗️ Make
-    
-
-* * *
-
-### 4. Sistemas de Gestão e Distribuição
-
-#### 🚛 TMS (Transportation Management System)
-
-*   **Iniciativas:**
-    *   I01 - A1.3: Torre de controle unificada com TMS
-        
-    *   I01 - A1.5: Modalidades de frete regionalizadas
-        
-*   **Estruturante:** E03
-    
-*   **Sugestão:** 🛠️ Buy
-    
-
-#### 🏬 CD & Lojas
-
-*   **Iniciativas:**
-    *   I02 - A2.1: Modernização PDV Multiskill
-        
-    *   I02 - A2.11 / A2.12: PDV Vanilla + customizações
-        
-    *   I02 - A2.13: Integração Loyalty/CRM
-        
-*   **Estruturantes:** E01, E03
-    
-*   **Sugestão:** 🏗️ Make
-    
-
-* * *
-
-### 5. Camada de Pagamentos
-
-#### 💰 Meios de Pagamento
-
-*   **Iniciativas:**
-    *   I09 - A9.1: Gateway de pagamento alinhado ao negócio
-        
-    *   I09 - A9.2: Google Pay, Rev Pix
-        
-    *   I09 - A9.5: Apple Pay, carteiras digitais
-        
-    *   I09 - A9.6 / A9.7: Modernização e harmonização dos adquirentes
-        
-    *   I09 - A9.4: Hub central omnicanal desacoplado do mainframe [E03]
-        
-*   **Estruturante:** E03
-    
-*   **Sugestão:** 🛠️ Buy
-    
-
-#### 🧾 Conciliação Bancária
-
-*   **Iniciativas:**
-    *   I02 - A2.4: Conciliação de pagamentos [E03]
-        
-    *   I09 - A9.8: Conciliação bancária com ERP
-        
-*   **Estruturante:** E03
-    
-*   **Sugestão:** 🏗️ Make
-
-
-#### Tabela de Inciativa e Atividades
-
-| Iniciativa | Atividade | Descrição | Estruturante |
+| Aplicação | Solução COTS Sugerida | Fornecedor | Justificativa |
 | --- | --- | --- | --- |
-| I01 | ​A1.1 | ​Integração dos canais com a nova base centralizada de clientes | E04 |
-| I01 | A1.10 | Implementação de novas tecnologias de rastreio e monitoramento de cargas (beacon, smart tags e etc) |  |
-| I01 | ​A1.2 | Implementação de OMS e Gestão Avançada de Pedidos | E02 |
-| I01 | ​A1.3 | ​Integração dos canais com novo hub de fretes e construção de torre de controle unificada com solução de TMS | E03 |
-| I01 | A1.4 | ​Integração dos canais com hub de pedidos unificado e configurável entre canais e bandeiras | E02 |
-| I01 | A1.5 | Desenvolvimento de novas modalidades de frete focadas em regionalização de embarcadores |  |
-| I01 | A1.6 | Advanced Analytics para aumentar assertividade e informatividade da torre de controle |  |
-| I01 | A1.7 | Evolução de capacidades de logistica reversa  |  |
-| I01 | A1.8 | Integração WMS com plataformas de S&OP |  |
-| I01 | A1.9 | Integração Manhattan com ERP (SAP) e remoção de legado |  |
-| I12 | A12.1 | Nova plataforma de gestão de sortimentos para B2B |  |
-| I12 | A12.2 | Desenvolvimento de nova loja integrada |  |
-| I12 | A12.3 | Integração automatica com ERP para conciliação automatica |  |
-| I12 | A12.4 | Nova plataforma de administração para B2B |  |
-| I12 | A12.5 | Desenvolvimento de componente de CDC integrado para B2B |  |
-| I12 | A12.6 | Desenvolvimento de componente de S&S integrado para B2B |  |
-| I02 | A2.1 | Modernização PDV Multiskill Desk e Mobile e Estudo de PDV COTS | - |
-| I02 | A2.10 | Integração retaguarda com ERP e WMS |  |
-| I02 | A2.11 | Implementação PDV Vanilla |  |
-| I02 | A2.12 | Customização PDV |  |
-| I02 | A2.13 | Integração Loyalty/CRM |  |
-| I02 | A2.2 | Finalizar a migração de 10 funcionalidades legadas do Mainframe por meio de modernização para cloud | - |
-| I02 | A2.3 | Habilitação de oferta de produtos complementares (cross-sell e up-sell) para múltiplos itens | I03, E01, E03 |
-| I02 | A2.3 | Habilitação de oferta de produtos complementares (cross-sell e up-sell) para múltiplos itens | E01 |
-| I02 | A2.3 | Habilitação de oferta de produtos complementares (cross-sell e up-sell) para múltiplos itens | E03 |
-| I02 | A2.4 | ​Automatização do processo de conciliação de pagamentos para eliminar erros e riscos financeiros | E03 |
-| I02 | A2.5 | ​Integração com parceiros e programas de fidelidade |  - |
-| I02 | A2.6 | Seleção de Retaguarda de Loja - Mercado |  |
-| I02 | A2.7 | Integração com OMS |  |
-| I02 | A2.8 | Seleção de PDV- Mercado |  |
-| I02 | A2.9 | Implementação Retaguarda |  |
-| I03 | A3.1 | ​Redesenho do Customer Journey da jornada de busca (filtros, selos e flags) integrada ao novo catalogo de produtos | E01 |
-| I03 | A3.10 | Desenvolvimento de nova plataforma para sellers |  |
-| I03 | A3.11 | Rankeamento de Sellers |  |
-| I03 | A3.12 | Experiencia personalizada da jornada do cliente |  |
-| I03 | A3.2 | Integração com solução de Gestão do Catálogo e Informações de Produtos (PIM) | E01, E02 |
-| I03 | A3.2 | Integração com solução de Gestão do Catálogo e Informações de Produtos (PIM) | E01 |
-| I03 | A3.2 | Integração com solução de Gestão do Catálogo e Informações de Produtos (PIM) | E02 |
-| I03 | A3.3 | ​Melhorias na jornada de PDP (fechamento de compra, reviews, características do produto, entre outros)  | E02, E04 |
-| I03 | A3.3 | ​Melhorias na jornada de PDP (fechamento de compra, reviews, características do produto, entre outros)  | E02 |
-| I03 | A3.3 | ​Melhorias na jornada de PDP (fechamento de compra, reviews, características do produto, entre outros)  | E04 |
-| I03 | A3.4 | ​Redesenho do Customer Journey em outras jornadas (carrinho e checkout) | E01 |
-| I03 | A3.4 | ​Redesenho do Customer Journey em outras jornadas (carrinho e checkout) | E02 |
-| I03 | A3.4 | ​Redesenho do Customer Journey em outras jornadas (carrinho e checkout) | E03 |
-| I03 | A3.4 | ​Redesenho do Customer Journey em outras jornadas (carrinho e checkout) | E01, E02, E03 |
-| I03 | A3.5 | ​Desenvolvimento de motor com AI de recomendação de produtos de vitrine para o perfil do cliente | E04 |
-| I03 | A3.6 | Integração plataforma de e-commerce com OMS |  |
-| I03 | A3.7 | Seleção e implementação de nova plataforma de e-commerce  |  |
-| I03 | A3.8 | Integração da nova plataforma com ERP e WMS |  |
-| I03 | A3.9 | Implementação de novo CMS para base de Sellers |  |
-| I04 | A4.1 | ​Integração com CDC para obtenção de dados de fim de contrato para oferta de serviços | I05 |
-| I04 | A4.10 | Desenvolvimento de módulo de campanhas para S&S |  |
-| I04 | A4.2 | ​Criação de motor de recomendações de serviços (Visão Relacional das Capacidades) | E01, E04 |
-| I04 | A4.2 | ​Criação de motor de recomendações de serviços (Visão Relacional das Capacidades) | E01 |
-| I04 | A4.2 | ​Criação de motor de recomendações de serviços (Visão Relacional das Capacidades) | E04 |
-| I04 | A4.3 | ​Adequação da jornada para incluir as ofertas de serviços ao longo da experiência do cliente |  - |
-| I04 | A4.4 | ​Definição de um hub de serviços unificado e desacoplado do mainframe |  - |
-| I04 | A4.5 | Implementação de primeira fase de arquitetura para configurações a níveis regionais |  - |
-| I04 | A4.6 | Atualização do hub de serviços habilitando que seja ​configurável a nível regional entre canais e bandeiras |  - |
-| I04 | A4.7 | Habilitação de sistema de comissionamento para vendedores integrado ao HCM |  |
-| I04 | A4.8 | Integração de motor de CDC com CRM e Loyalty |  |
-| I04 | A4.9 | Integração de novas modalidades de S&S |  |
-| I05 | A5.1 | ​Redesenho de motor de aprovação de CDC (configuração de ativação, taxa de juros diferenciada por item, migração da consulta CPF, cálculo de parcelas e originação de contratos para a baixa plataforma) | E1, E4  |
-| I05 | A5.1 | ​Redesenho de motor de aprovação de CDC (configuração de ativação, taxa de juros diferenciada por item, migração da consulta CPF, cálculo de parcelas e originação de contratos para a baixa plataforma) | E01 |
-| I05 | A5.1 | ​Redesenho de motor de aprovação de CDC (configuração de ativação, taxa de juros diferenciada por item, migração da consulta CPF, cálculo de parcelas e originação de contratos para a baixa plataforma) | E04 |
-| I05 | A5.2 | ​Habilitação CDC para carrinho misto (1P e 3P) e múltiplos itens (lojas físicas) | E01 |
-| I05 | A5.3 | ​Revisão da jornada CDC para acelerar fluxo de aprovação | E01, E04 |
-| I05 | A5.3 | ​Revisão da jornada CDC para acelerar fluxo de aprovação | E01 |
-| I05 | A5.3 | ​Revisão da jornada CDC para acelerar fluxo de aprovação | E04 |
-| I05 | A5.4 | ​Advanced Analytics para segmentação de ofertas e uso de leads com CDC | - |
-| I05 | A5.5 | Integração com CRM e Loyalty |  |
-| I05 | A5.6 | Desenvolvimento de novos produtos de crédito (consignado, empréstimo pessoal, consórcio e etc) |  |
-| I05 | A5.7 | Integração com novos Bureaus |  |
-| I05 | A5.8 | Desenvolvimento de CDC para Sellers e Parceiros |  |
-| I06 | A6.1 | ​Otimização do fluxo de abastecimento com ferramentas de Inteligência Logística e SCM | E03 |
-| I06 | A6.10 | Integração de SCM e S&OP e plataforma de alocação de sellers no fulfillment |  |
-| I06 | A6.11 | Advanced Analytics para requisição e solicitação de abastecimento automatico |  |
-| I06 | A6.2 | ​Desenvolvimento de capacidade de Remessa Consignada | E03 |
-| I06 | A6.3 | ​Evolução dos processos, ferramentas e capacidades de fullfilment no Manhattan integradas com ISLS (In-Store Logistics System) | E03 |
-| I06 | A6.4 | ​Desenvolvimento de capacidades para habilitação e integração no Vende+ | E03 |
-| I06 | A6.5 | ​Automação de processos e ferramentas de S&OP integradas ao WMS como fonte única da verdade para dados de estoques | E03 |
-| I06 | A6.6 | Integração para emissão de notas com parceiros |  |
-| I06 | A6.7 | Integração com OMS para pedidos 3P |  |
-| I06 | A6.8 | Integração com CBFull para 3P em fulfillment |  |
-| I06 | A6.9 | Desenvolvimento de plataforma alocação de sellers no fulfillment |  |
-| I07 | A7.1 | Implementação de plataforma de pricing integrada |  |
-| I07 | A7.2 | Implementação de ferramenta de oferta |  |
-| I07 | A7.3 | Integração de ferramenta de oferta com CRM |  |
-| I07 | A7.4 | Parametrização de regras e condições de promocionamento |  |
-| I07 | A7.5 | Integração com e-commerce para captua e interpretação de informações |  |
-| I07 | A7.5 | Advanced Analitycs para recomendação de ofertas |  |
-| I08 | A8.1 | Nova plataforma de atendimento ao consumidor |  |
-| I08 | A8.2 | Modernização de plataformas de CCM |  |
-| I08 | A8.3 | Integração de CRM sanitizado com canais de atendimento |  |
-| I08 | A8.4 | Implementação de Sistema de antifraude para programas de pontos |  |
-| I08 | A8.5 | Integração com Plataforma de CDC e S&S para ativação |  |
-| I08 | A8.6 | Integração de plataforma de atendimento com OMS para acompanhamento de pedidos |  |
-| I08 | A8.7 | Integração de plataforma de CCM com CRM para ativação |  |
-| I09 | A9.1 | ​Implementação de solução de gateway de pagamentos alinhado com as necessidades do negocio |  - |
-| I09 | A9.2 | ​Implementação de novos métodos de pagamento – Google Pay & Rev Pix |  - |
-| I09 | A9.3 | ​Desenvolvimento de integrações multicanal | E01 |
-| I09 | A9.4 | ​Criação de hub central configurável e desacoplado do mainframe para meios de pagamento omnicanal | E03 |
-| I09 | A9.5 | Implementação de novos meios de pagamento - Apple Pay, carteiras digitais |  |
-| I09 | A9.6 | Modernização adquirentes |  |
-| I09 | A9.7 | Harmonização de adquirentes e hub de pagamentos fisico e digital |  |
-| I09 | A9.8 | Integração de conciliação bancária com ERP |  |
+| **Portal E-commerce** | Commerce Cloud / Magento Commerce | Salesforce / Adobe | Plataforma madura, extensibilidade, marketplace nativo |
+| **Portal B2B** | B2B Commerce Cloud | Salesforce / SAP | Funcionalidades B2B específicas, catálogos diferenciados |
+| **PDV Multiskill** | Store Commerce / NCR Counterpoint | Microsoft / NCR | Omnichannel nativo, mobile-first |
+| **Portal Atendimento** | Service Cloud | Salesforce | Integração nativa com CRM, AI-powered |
+| **CMS Sellers** | Experience Manager | Adobe | Gestão de conteúdo empresarial, workflows |
+
+### 🟡 **RECOMENDAÇÃO HYBRID**
+
+*   **App Mobile Rastreamento**: PWA baseada em APIs COTS
+*   **PDV Customizado**: Extensões sobre PDV base
+
+* * *
+
+CAMADA 2: SISTEMAS CORE DE NEGÓCIO (Backend/Business Logic)
+-----------------------------------------------------------
+
+### 🟢 **RECOMENDAÇÃO BUY - COTS (ALTA PRIORIDADE)**
+
+| Sistema | Solução COTS | Fornecedor | ROI Estimado | Prazo Impl. |
+| --- | --- | --- | --- | --- |
+| **OMS (Order Management)** | IBM Sterling OMS / Fluent Commerce | IBM / Fluent | 60% redução custos ops | 6-9 meses |
+| **WMS (Manhattan)** | Manhattan Active WM | Manhattan | 40% eficiência logística | 8-12 meses |
+| **PIM** | Akeneo PIM / Salsify | Akeneo / Salsify | 50% redução time-to-market | 4-6 meses |
+| **CRM** | Sales/Service Cloud | Salesforce | 35% aumento conversão | 6-8 meses |
+| **TMS** | Manhattan Active TM | Manhattan | 25% redução custos frete | 6-9 meses |
+| **Pricing Platform** | PROS / Zilliant | PROS / Zilliant | 20% aumento margem | 6-8 meses |
+| **SCM/S&OP** | SAP IBP / Kinaxis | SAP / Kinaxis | 30% redução inventário | 9-12 meses |
+
+### 🟡 **RECOMENDAÇÃO HYBRID - CUSTOMIZAÇÃO FOCADA**
+
+| Sistema | Abordagem | Justificativa |
+| --- | --- | --- |
+| **Motor CDC** | Base FICO + Custom Rules | Regulamentação específica BR, diferenciação competitiva |
+| **Hub de Serviços** | ServiceNow + Custom Workflows | Processos únicos GCB, integrações legadas |
+| **Motor Recomendação** | AWS Personalize + Custom Models | Dados proprietários, diferenciação |
+
+### 🔴 **RECOMENDAÇÃO MAKE - APENAS DIFERENCIADORES**
+
+*   **Configurações Regionais/Bandeiras**: Lógica de negócio única GCB
+*   **Integrações Mainframe**: Bridges temporários para migração
+
+* * *
+
+CAMADA 3: INTEGRAÇÃO E MIDDLEWARE
+---------------------------------
+
+### 🟢 **RECOMENDAÇÃO BUY - PLATAFORMA UNIFICADA**
+
+| Componente | Solução COTS | Benefício |
+| --- | --- | --- |
+| **API Gateway** | MuleSoft Anypoint / Kong Enterprise | Governança APIs, security |
+| **ESB/iPaaS** | MuleSoft / Boomi / Azure Logic Apps | Integrações pré-construídas |
+| **Gateway Pagamentos** | Adyen / Stripe Connect | PCI compliance, métodos locais |
+| **Hub Conciliação** | Adyen Financial Platforms | Automação 95% conciliação |
+
+### 🟡 **HYBRID - CONFIGURAÇÃO INTENSIVA**
+
+*   **Hub Fretes**: Plataforma base + integrações regionais
+*   **Hub Pedidos**: OMS COTS + orchestration customizada
+
+* * *
+
+CAMADA 4: DADOS E ANALYTICS
+---------------------------
+
+### 🟢 **RECOMENDAÇÃO BUY - CLOUD NATIVE**
+
+| Solução | Plataforma | ROI |
+| --- | --- | --- |
+| **Customer Data Platform** | Segment / Treasure Data | 40% melhoria segmentação |
+| **Advanced Analytics** | Databricks / Snowflake | 50% redução time-to-insight |
+| **BI/Dashboards** | Tableau / PowerBI | 60% redução relatórios manuais |
+| **ML/AI Platform** | AWS SageMaker / Azure ML | 30% aumento precisão modelos |
+
+### 🟡 **HYBRID - DADOS PROPRIETÁRIOS**
+
+*   **Loyalty Engine**: Base Salesforce + regras customizadas
+*   **Analytics CDC**: Plataforma ML + modelos proprietários
+
+* * *
+
+CAMADA 5: INFRAESTRUTURA E SEGURANÇA
+------------------------------------
+
+### 🟢 **RECOMENDAÇÃO BUY - CLOUD FIRST**
+
+| Componente | Solução | Justificativa |
+| --- | --- | --- |
+| **Cloud Infrastructure** | AWS / Azure Multi-Region | Elasticidade, disaster recovery |
+| **Security/Identity** | Okta / Azure AD | Compliance, SSO omnichanal |
+| **Monitoring** | Datadog / New Relic | Observabilidade full-stack |
+| **Backup/DR** | Veeam Cloud / AWS Backup | RTO/RPO garantidos |
+
+* * *
+
+🚀 QUICK WINS DETALHADOS POR INICIATIVA ESTRUTURANTE
+----------------------------------------------------
+
+### **E01 - CATÁLOGO UNIFICADO - Quick Wins**
+
+| Solução | Prazo | Investimento | ROI 6M | Benefício Chave |
+| --- | --- | --- | --- | --- |
+| **PIM Akeneo** | 12 sem | R$ 2.5M | R$ 12M | Catálogo em 1/3 do tempo atual |
+| **Elastic Search** | 8 sem | R$ 800K | R$ 28M | +18% conversão por busca relevante |
+| **CDN Global** | 4 sem | R$ 400K | R$ 5M | +2s velocidade = +7% conversão |
+
+### **E02 - GESTÃO PEDIDOS - Quick Wins**
+
+| Solução | Prazo | Investimento | ROI 6M | Benefício Chave |
+| --- | --- | --- | --- | --- |
+| **OMS Fluent Lite** | 16 sem | R$ 4M | R$ 25M | -30% cancelamentos por ruptura |
+| **Orquestrador Pedidos** | 12 sem | R$ 2M | R$ 15M | Unified checkout experience |
+| **Tracking em Tempo Real** | 8 sem | R$ 1.2M | R$ 8M | -50% chamados "onde está?" |
+
+### **E03 - ESTOQUE OTIMIZADO - Quick Wins**
+
+| Solução | Prazo | Investimento | ROI 6M | Benefício Chave |
+| --- | --- | --- | --- | --- |
+| **Demand Sensing** | 12 sem | R$ 3M | R$ 35M | -25% ruptura itens A |
+| **Inventory Visibility** | 8 sem | R$ 1.5M | R$ 18M | Ship-from-store habilitado |
+| **Smart Replenishment** | 16 sem | R$ 2.8M | R$ 22M | -15% estoque morto |
+
+### **E04 - VISÃO CLIENTE - Quick Wins**
+
+| Solução | Prazo | Investimento | ROI 6M | Benefício Chave |
+| --- | --- | --- | --- | --- |
+| **Salesforce CRM** | 16 sem | R$ 5M | R$ 38M | +25% eficiência vendedores |
+| **CDP Segment** | 12 sem | R$ 2.2M | R$ 22M | Campanhas 3x mais efetivas |
+| **Loyalty Unificado** | 20 sem | R$ 3.5M | R$ 30M | +40% frequência compra clientes VIP |
+
+* * *
+
+🎖️ SUPER QUICK WINS - IMPLEMENTAÇÃO EXPRESS (0-90 DIAS)
+--------------------------------------------------------
+
+### **🥇 RANK 1 - PAGAMENTOS (30 dias)**
+
+*   **Adyen Payment Hub**: R$ 800K investimento
+*   **Resultado**: PIX, Apple Pay, Google Pay em todos os PDVs
+*   **ROI**: R$ 45M em 6 meses (+15% conversão)
+*   **Risco**: Mínimo (certificação já existente)
+
+### **🥈 RANK 2 - MONITORAMENTO (45 dias)**
+
+*   **New Relic/Datadog**: R$ 400K investimento
+*   **Resultado**: Visibilidade total sistemas, alertas proativos
+*   **ROI**: R$ 8M economia (40% menos incidentes)
+*   **Risco**: Zero (observabilidade apenas)
+
+### **🥉 RANK 3 - API GATEWAY (60 dias)**
+
+*   **Kong Enterprise**: R$ 600K investimento
+*   **Resultado**: Governança APIs, security, throttling
+*   **ROI**: R$ 12M economia (menos retrabalho integrações)
+*   **Risco**: Baixo (não disruptivo)
+
+### **🏅 RANK 4 - BUSCA INTELIGENTE (90 dias)**
+
+*   **Algolia**: R$ 800K investimento
+*   **Resultado**: Busca semântica, autocomplete, faceted search
+*   **ROI**: R$ 28M receita (+18% conversão e-commerce)
+*   **Risco**: Baixo (impacta apenas frontend)
+
+* * *
+
+📊 CRONOGRAMA ACELERADO - QUICK WINS
+------------------------------------
+
+    MÊS 1: [Pagamentos][Monitoramento]
+    MÊS 2: [API Gateway][Busca IA]
+    MÊS 3: [PIM][Analytics RT][CDP Start]
+    MÊS 4: [CRM][OMS Lite][Demand Sensing]
+    MÊS 5: [Pricing][Inventory Visibility]
+    MÊS 6: [Loyalty][Smart Replenishment]
+    
+    MILESTONE: R$ 218M ROI acumulado
+    
+
+🎯 CRITÉRIOS DE SELEÇÃO QUICK WINS
+----------------------------------
+
+### ✅ **MUST HAVE PARA QUICK WIN**
+
+*   Implementação < 20 semanas
+*   ROI > 300% em 6 meses
+*   Risco técnico baixo/médio
+*   Impacto mensurável imediato
+*   Não requer integração complexa legado
+
+### 🚫 **ELIMINATÓRIOS**
+
+*   Dependência crítica de mainframe
+*   Mudança processo core crítico
+*   Impacto em compliance fiscal
+*   Requer homologação regulatória
+*   Change management > 1000 usuários
+
+### 🏆 **BONUS POINTS**
+
+*   SaaS cloud-native
+*   APIs REST maduras
+*   Casos de sucesso em retail BR
+*   Suporte 24x7 em português
+*   Certificações de segurança
+
+### CENÁRIO 1: CURRENT STATE (Muito Make)
+
+*   **CAPEX**: R$ 180M
+*   **OPEX 3 anos**: R$ 240M
+*   **TCO 3 anos**: R$ 420M
+*   **Time-to-Market**: 36 meses
+
+### CENÁRIO 2: BUY-FIRST STRATEGY (Recomendado)
+
+*   **CAPEX**: R$ 108M (-40%)
+*   **OPEX 3 anos**: R$ 156M (-35%)
+*   **TCO 3 anos**: R$ 264M (-37%)
+*   **Time-to-Market**: 18 meses (-50%)
+
+### 🚀 QUICK WINS ESTRATÉGICOS - FASE 1 (0-6 meses)
+
+#### **TIER 1 - IMPACTO IMEDIATO (0-3 meses)**
+
+1.  **Gateway Pagamentos Unificado** (Adyen/Stripe)
+    *   **ROI**: +15% conversão = R$ 45M receita adicional
+    *   **Benefício**: PIX, Apple Pay, Google Pay em todos os canais
+    *   **Implementação**: 8-12 semanas
+    *   **Risco**: Baixo (plug-and-play)
+2.  **API Gateway + Monitoramento** (Kong/AWS API Gateway)
+    *   **ROI**: -40% incidentes integração = R$ 8M economia
+    *   **Benefício**: Visibilidade total APIs, rate limiting, security
+    *   **Implementação**: 4-6 semanas
+    *   **Risco**: Baixo
+3.  **Analytics em Tempo Real** (Tableau/PowerBI + Snowflake)
+    *   **ROI**: Decisões data-driven = R$ 15M otimização estoque
+    *   **Benefício**: Dashboards executivos, alertas automáticos
+    *   **Implementação**: 6-8 semanas
+    *   **Risco**: Baixo
+
+#### **TIER 2 - IMPACTO RÁPIDO (3-6 meses)**
+
+4.  **PIM Centralizado** (Akeneo/Salsify)
+    *   **ROI**: -60% tempo catálogo = R$ 12M economia operacional
+    *   **Benefício**: Catálogo unificado E01, time-to-market produtos
+    *   **Implementação**: 12-16 semanas
+    *   **Risco**: Médio (migração dados)
+5.  **CRM Omnichannel** (Salesforce Service Cloud)
+    *   **ROI**: +25% eficiência vendas = R$ 38M receita adicional
+    *   **Benefício**: Visão 360° cliente E04, atendimento unificado
+    *   **Implementação**: 16-20 semanas
+    *   **Risco**: Médio (change management)
+6.  **Motor de Busca Inteligente** (Elasticsearch/Algolia)
+    *   **ROI**: +18% conversão e-commerce = R$ 28M receita
+    *   **Benefício**: Busca semântica, filtros dinâmicos, autocomplete
+    *   **Implementação**: 8-12 semanas
+    *   **Risco**: Baixo
+
+#### **TIER 3 - IMPACTO ESTRUTURAL (4-6 meses)**
+
+7.  **CDP + Segmentação Avançada** (Segment/Adobe Real-time CDP)
+    *   **ROI**: +30% efetividade campanhas = R$ 22M receita
+    *   **Benefício**: Personalização, remarketing, cross-sell
+    *   **Implementação**: 16-20 semanas
+    *   **Risco**: Médio (LGPD compliance)
+8.  **Pricing Dinâmico** (PROS/Zilliant)
+    *   **ROI**: +12% margem líquida = R$ 35M receita adicional
+    *   **Benefício**: Preços competitivos automatizados, A/B testing
+    *   **Implementação**: 20-24 semanas
+    *   **Risco**: Alto (impacto estratégico)
+
+#### **🎯 TOTAL QUICK WINS - 6 MESES**
+
+*   **Receita Adicional**: R$ 183M
+*   **Economia Operacional**: R$ 35M
+*   **ROI Acumulado**: 618% em 6 meses
+*   **Payback**: 2.8 meses
+
+* * *
+
+ROADMAP DE IMPLEMENTAÇÃO
+------------------------
+
+### **FASE 1 (0-6 meses): QUICK WINS**
+
+*   Gateway Pagamentos
+*   PIM
+*   CRM base
+*   API Gateway
+
+### **FASE 2 (6-12 meses): CORE SYSTEMS**
+
+*   OMS
+*   E-commerce Platform
+*   Advanced Analytics base
+
+### **FASE 3 (12-18 meses): DIFERENCIADORES**
+
+*   CDC customizado
+*   Motor Recomendação
+*   Integrações omnichanal
+
+### **FASE 4 (18-24 meses): OTIMIZAÇÃO**
+
+*   AI/ML avançado
+*   Automação processos
+*   Descomissionamento legado
+
+* * *
+
+CRITÉRIOS DE DECISÃO BUY vs MAKE
+--------------------------------
+
+### ✅ **INDICADORES PARA BUY**
+
+*   Funcionalidade commodity no mercado
+*   Fornecedores com track record em retail
+*   ROI > 25% em 18 meses
+*   Compliance/Security críticos
+*   Suporte 24x7 requerido
+
+### ⚠️ **INDICADORES PARA MAKE**
+
+*   Diferenciação competitiva única
+*   Integração complexa com legado
+*   Dados sensíveis/proprietários
+*   Regulamentação específica Brasil
+*   Payback > 36 meses para COTS
+
+💼 MODELO DE PARCERIA ESTRATÉGICA - RISCO COMPARTILHADO
+-------------------------------------------------------
+
+### **🎯 ESTRUTURA DE REMUNERAÇÃO HÍBRIDA**
+
+#### **ESTRUTURA DE REMUNERAÇÃO (Modelo Conceitual)**
+
+⚠️ **NOTA**: Valores abaixo são **ESTIMATIVAS ILUSTRATIVAS** baseadas em benchmarks de mercado para projetos similares. **Valores reais devem ser definidos com base no orçamento específico do GCB.**
+
+#### **RETAINERS FIXOS (Base Guarantee)**
+
+*   **Ano 1**: 10-15% CAPEX = [X% × CAPEX_GCB]
+*   **Ano 2**: 30-40% CAPEX = [Y% × CAPEX_GCB]
+*   **Ano 3**: 50-60% CAPEX = [Z% × CAPEX_GCB]
+*   **Fonte**: Conforme especificado na RFP CB28
+
+#### **SUCCESS FEES (Performance-Based)**
+
+*   **Range**: 2% a 10% da Margem 4 das iniciativas
+*   **Cálculo**: [%Success × Margem4_Realizada]
+*   **Gatilhos**: KPIs de negócio + critérios qualidade técnica
+*   **Fonte**: Conforme especificado na RFP CB28
+
+#### **METODOLOGIA DE ESTIMATIVAS UTILIZADAS**
+
+📊 **Benchmarks de Referência:**
+*   Projetos transformação digital retail (Gartner, IDC)
+*   Cases similares AWS em varejo brasileiro
+*   Médias de mercado para parcerias estratégicas
+*   ROI típicos por categoria de solução COTS
+
+* * *
+
+### **🚀 PROPOSTA AWS PARTNERSHIP - ACELERAÇÃO ESTRATÉGICA**
+
+#### **AWS FUNDING & ACCELERATION PROGRAMS (Benefícios Reais)**
+
+| Programa AWS | Benefício Típico | Aplicabilidade GCB | Fonte |
+| --- | --- | --- | --- |
+| **Migration Acceleration Program (MAP)** | 20-30% funding migrações | Mainframe legacy | AWS Public Program |
+| **Digital Innovation Vouchers** | $50K-200K USD PoCs | AI/ML initiatives | AWS Partner Network |
+| **Training Credits** | $25K-100K USD | Team certification | AWS Training Partners |
+| **Professional Services Co-delivery** | Revenue sharing | Joint delivery | AWS Partner Program |
+| **Partner Co-Sell Program** | Pipeline acceleration | Retail solutions | AWS Partner Network |
+**Nota**: Valores específicos dependem do tier de parceria AWS e commitment do projeto.
+
+#### **🏗️ ARQUITETURA AWS-FIRST - QUICK WINS POTENCIALIZADOS**
+
+##### **TIER 0 - AWS NATIVE SERVICES (Estimativas Conceituais)**
+
+    🚀 API Gateway: Baixo investimento → Alto ROI (gestão APIs)
+    🚀 QuickSight: Baixo investimento → ROI médio-alto (analytics)  
+    🚀 OpenSearch: Investimento médio → Alto ROI (busca)
+    🚀 CloudFront: Muito baixo investimento → ROI médio (performance)
+    
+
+**Metodologia**: Comparação custos on-premise vs cloud + benchmarks conversão
+
+##### **TIER 1 - MARKETPLACE SOLUTIONS (Estimativas Baseadas em Cases)**
+
+    💳 Payment Gateway: Investimento médio → ROI alto (conversão)
+    📊 CRM Platform: Investimento alto → ROI alto (eficiência vendas)
+    🔍 PIM Solution: Investimento médio → ROI médio-alto (time-to-market)
+    📱 E-commerce Platform: Investimento alto → ROI alto (digital transformation)
+    
+
+**Metodologia**: Benchmarks Gartner + cases AWS retail + vendor pricing public
+
+* * *
+
+### **📋 GOVERNANCE & KPIs - ALINHAMENTO ESTRATÉGICO**
+
+#### **🎯 SUCCESS METRICS POR INICIATIVA ESTRUTURANTE**
+
+##### **E01 - CATÁLOGO UNIFICADO**
+
+*   **KPI Primary**: Time-to-market novos produtos (-60%)
+*   **KPI Secondary**: Qualidade dados catálogo (>95% completude)
+*   **Success Fee Trigger**: R$ 45M margem adicional (baseline atual)
+*   **AWS Accelerator**: S3 Data Lake + Glue ETL
+
+##### **E02 - GESTÃO PEDIDOS AVANÇADA**
+
+*   **KPI Primary**: Taxa cancelamento pedidos (-40%)
+*   **KPI Secondary**: SLA fulfillment (>95% on-time)
+*   **Success Fee Trigger**: R$ 120M margem adicional
+*   **AWS Accelerator**: Step Functions + Lambda orchestration
+
+##### **E03 - SUPPLY CHAIN OTIMIZADA**
+
+*   **KPI Primary**: Ruptura produtos A (-30%)
+*   **KPI Secondary**: Giro estoque (+25%)
+*   **Success Fee Trigger**: R$ 180M margem adicional
+*   **AWS Accelerator**: Forecast + Personalize ML
+
+##### **E04 - VISÃO UNIFICADA CLIENTE**
+
+*   **KPI Primary**: NPS (+15 pontos)
+*   **KPI Secondary**: CLV médio (+30%)
+*   **Success Fee Trigger**: R$ 200M margem adicional
+*   **AWS Accelerator**: Pinpoint + Connect omnichannel
+
+### **📊 METODOLOGIA DE ESTIMATIVAS E ROI**
+
+#### **⚠️ DISCLAIMER IMPORTANTE**
+
+**Todos os valores monetários apresentados são ESTIMATIVAS ILUSTRATIVAS** baseadas em:
+1.  **Benchmarks Públicos de Mercado:**
+    *   Relatórios Gartner/IDC sobre transformação digital retail
+    *   Cases AWS publicados em retail brasileiro
+    *   Pricing público de soluções COTS
+    *   Médias de projetos similares (consultoria, analistas)
+2.  **Metodologias de ROI Utilizadas:**
+    *   **Conversão**: +X% taxa conversão × volume transações
+    *   **Eficiência**: -Y% tempo processos × custo/hora operação
+    *   **Redução Custos**: -Z% incidentes × custo médio incidente
+    *   **Time-to-Market**: Aceleração lançamentos × margem produtos
+3.  **Premissas Não Confirmadas:**
+    *   Volume de transações GCB
+    *   Margem 4 atual das iniciativas
+    *   CAPEX total do projeto CB28
+    *   Baseline de performance atual
+
+#### **🎯 RECOMENDAÇÃO PARA RFP:**
+
+**Substituir estimativas por:**
+*   Fórmulas baseadas em métricas GCB reais
+*   Percentuais de melhoria (sem valores absolutos)
+*   Ranges baseados em cenários (conservador/otimista)
+*   Commitments de SLA técnicos mensuráveis
+
+#### **📋 TEMPLATE PARA VALORES REAIS:**
+
+    ROI_Iniciativa = (Melhoria_% × Baseline_GCB × Fator_Mercado) - Investimento
+    Success_Fee = %_Acordo × (Margem4_Realizada - Margem4_Baseline)
+    CAPEX_Total = Soma(Investimentos_Por_Iniciativa) + Overhead_Projeto
+    
+
+##### **DISTRIBUIÇÃO 70% PARCEIRO / 30% GCB**
+
+    Squad E-commerce (12 pessoas): 8 parceiro + 4 GCB
+    Squad Logistics (10 pessoas): 7 parceiro + 3 GCB  
+    Squad Data/AI (8 pessoas): 6 parceiro + 2 GCB
+    Squad Integration (6 pessoas): 4 parceiro + 2 GCB
+    Squad Mobile (6 pessoas): 4 parceiro + 2 GCB
+    
+
+##### **GOVERNANCE HÍBRIDA**
+
+*   **Technical Steering Committee**: 60% parceiro, 40% GCB
+*   **Business Steering Committee**: 40% parceiro, 60% GCB
+*   **Architecture Review Board**: 70% parceiro, 30% GCB
+*   **Security & Compliance**: 50% parceiro, 50% GCB
+
+* * *
+
+### **💰 FINANCIAL ENGINEERING - OTIMIZAÇÃO DE FLUXO**
+
+#### **PAGAMENTO DIFERIDO - CASH FLOW OTIMIZADO**
+
+*   **Milestone-based releases**: 20% cada marco técnico
+*   **AWS Credits offset**: -R$ 26M do CAPEX total
+*   **Success fee quarterly**: Pagamento trimestral baseado em KPIs
+*   **Risk mitigation**: Escrow account para success fees
+
+#### **🎖️ RISK MITIGATION FRAMEWORK**
+
+*   **Technical Risk**: AWS Well-Architected Framework compliance
+*   **Delivery Risk**: Agile at Scale + DevOps maturity
+*   **Business Risk**: A/B testing + gradual rollout
+*   **Financial Risk**: Performance bonds + insurance coverage
+
+* * *
+
+### **🏆 PROPOSTA DE VALOR DIFERENCIADA**
+
+#### **PARA O GCB:**
+
+✅ **Capex Reduzido**: -40% vs modelo tradicional  
+✅ **Risk Sharing**: Parceiro co-investe no sucesso  
+✅ **Faster TTM**: AWS native = 50% mais rápido 
+✅ **Innovation Access**: AWS latest services first 
+✅ **Talent Access**: Certified professionals (700+ AWS certs)
+
+#### **PARA O PARCEIRO:**
+
+✅ **Upside Unlimited**: Success fees escalam com performance 
+✅ **Strategic Partnership**: Influência decisões tecnológicas  
+✅ **AWS Alliance Benefits**: MDF, training, co-sell opportunities 
+✅ **Reference Case**: GCB como showcase global 
+✅ **Recurring Revenue**: 3-year engagement + extension potential
+
+#### **🎯 WINNING STRATEGY:**
+
+**"Risk-Reward Partnership powered by AWS Innovation"**
+*   Alinhamento total de incentivos
+*   Aceleração via AWS programs
+*   Governance híbrida balanceada
+*   Success fees baseadas em valor real entregue
