@@ -2,6 +2,26 @@ Blueprint Tecnológico GCB - Análise Buy vs Make por Camadas
 ===========================================================
 _Recomendações baseadas na Tabela de Lista de Projetos_
 
+#### **ESTRUTURA DE REMUNERAÇÃO (Modelo Conceitual)**
+
+⚠️ **NOTA**: Valores abaixo são **ESTIMATIVAS ILUSTRATIVAS** baseadas em benchmarks de mercado para projetos similares. **Valores reais devem ser definidos com base no orçamento específico do GCB.**
+
+⚠️ **NOTA ADICIONAL:**
+
+Além dos valores monetários, as "Soluções COTS Sugeridas", os "Fornecedores", os "ROI Estimados" e os "Prazos de Implementação" apresentados também são **ESTIMATIVAS ILUSTRATIVAS e SUGESTÕES CONCEITUAIS**.
+
+Elas são baseadas em:
+
+• **Benchmarks Públicos de Mercado**, incluindo relatórios de consultorias (Gartner, IDC), casos publicados de sucesso em varejo brasileiro e médias de mercado para projetos similares.
+
+• **Cases de sucesso da AWS em varejo** e seu marketplace.
+
+• **Metodologias de ROI e Prazos típicos por categoria de solução COTS**.
+
+• **Premissas não confirmadas** sobre o volume de transações, margens e CAPEX total específico do GCB3.
+
+Portanto, essas informações servem como um **guia inicial e um ponto de partida para discussão**. Os **valores reais e as decisões finais** para "Solução COTS Sugerida", "Fornecedor", "ROI Estimado" e "Prazo Impl." devem ser definidos com base nas métricas reais do GCB, no orçamento específico do projeto, em homologações regulatórias e em negociações contratuais detalhadas. O próprio _blueprint_ recomenda substituir estimativas por fórmulas baseadas em métricas reais, percentuais de melhoria ou ranges baseados em cenários.
+
 EXECUTIVE SUMMARY - RECOMENDAÇÕES ESTRATÉGICAS
 ----------------------------------------------
 
@@ -27,17 +47,17 @@ CAMADA 1: EXPERIÊNCIA DO CLIENTE (Frontend/UI)
 | Aplicação | Solução COTS Sugerida | Fornecedor | Justificativa | Iniciativas | Atividades | Obs. |
 | --- | --- | --- | --- | --- | --- | --- |
 | **Portal E-commerce** | Commerce Cloud / Magento Commerce | Salesforce / Adobe | Plataforma madura, extensibilidade, marketplace nativo | I03 |  A3.4, A3.6, A3.7, A3.8, A3.12  |  A busca inteligente, como **Algolia** ou **Elasticsearch**, é um "Quick Win" estratégico que visa melhorar a conversão do e-commerce |
-| **Portal B2B** | B2B Commerce Cloud | Salesforce / SAP | Funcionalidades B2B específicas, catálogos diferenciados | I12 | A12.1, A12.2, A12.4 | |
-| **PDV Multiskill** | Store Commerce / NCR Counterpoint | Microsoft / NCR | Omnichannel nativo, mobile-first |I02 | A2.1, A2.8, A2.11, A2.12 | |
-| **Portal Atendimento** | Service Cloud | Salesforce | Integração nativa com CRM, AI-powered | I08 | A8.1 | |
-| **CMS Sellers** | Experience Manager | Adobe | Gestão de conteúdo empresarial, workflows | I03 | A3.9, A3.10 | |
+| **Portal B2B** | B2B Commerce Cloud | Salesforce / SAP | Funcionalidades B2B específicas, catálogos diferenciados | I12 | A12.1, A12.2, A12.4 | As atividades I12 A12.1, A12.2 e A12.4 envolvem a criação de uma **nova plataforma de gestão de sortimentos, uma nova loja e uma plataforma de administração para B2B**, complementando as funcionalidades B2B específicas e catálogos **diferenciados** |
+| **PDV Multiskill** | Store Commerce / NCR Counterpoint | Microsoft / NCR | Omnichannel nativo, mobile-first |I02 | A2.1, A2.8, A2.11, A2.12 | A modernização do PDV Multiskill Desk e Mobile e o estudo de PDV COTS (I02 A2.1) buscam uma solução **omnichannel nativa e mobile-first** |
+| **Portal Atendimento** | Service Cloud | Salesforce | Integração nativa com CRM, AI-powered | I08 | A8.1 | A iniciativa I08 A8.1 prevê uma **nova plataforma de atendimento ao consumidor**, com foco em integração nativa com CRM e funcionalidades de AI, e a A8.6 a integra com o OMS para acompanhamento de pedido |
+| **CMS Sellers** | Experience Manager | Adobe | Gestão de conteúdo empresarial, workflows | I03 | A3.9, A3.10 | A implementação de um **novo CMS para base de Sellers** (I03 A3.9) e o desenvolvimento de uma nova plataforma para sellers (I03 A3.10) visam a gestão de conteúdo empresarial e workflows |
 
 ### 🟡 **RECOMENDAÇÃO HYBRID**
 
 | Sistema | Abordagem | Justificativa | Iniciativas | Atividades | Obs. |
 | --- | --- | --- | --- | --- | --- |
-|**App Mobile Rastreamento**|PWA baseada em APIs COTS | | I01 | A1.10 | |
-|**PDV Customizado**|Extensões sobre PDV base | | |  | |
+|**App Mobile Rastreamento**|PWA baseada em APIs COTS | Acelerar a visibilidade do rastreamento de cargas e **reduzir chamados de clientes** sobre o status de entregas | I01 | A1.10 | Alinhado à atividade I01 A1.10 de implementação de **novas tecnologias de rastreio e monitoramento de cargas** e ao Quick Win 'Tracking em Tempo Real' (E02), que visa **reduzir em 50% os chamados 'onde está?'** |
+|**PDV Customizado**|Extensões sobre PDV base | Necessidade de **extensões específicas sobre a base do PDV COTS** para atender requisitos únicos e processos proprietários do negócio GCB35 (informação inferida pela abordagem "Extensões sobre PDV base" e a lógica "MAKE" para diferenciadores). | | | A atividade I02 A2.12 'Customização PDV' indica a necessidade de **personalização sobre a plataforma base** para as especificidades operacionais do GCB |
 
 * * *
 
@@ -48,21 +68,21 @@ CAMADA 2: SISTEMAS CORE DE NEGÓCIO (Backend/Business Logic)
 
 | Sistema | Solução COTS | Fornecedor | ROI Estimado | Prazo Impl. | Iniciativas | Atividades | Obs. |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **OMS (Order Management)** | IBM Sterling OMS / Fluent Commerce | IBM / Fluent | 60% redução custos ops | 6-9 meses | I01<br> I03<br> I02<br> I08<br> I06 | A1.2, A1.4<br> A3.6<br> A2.7<br> A8.6<br> A6.7 | |
-| **WMS (Manhattan)** | Manhattan Active WM | Manhattan | 40% eficiência logística | 8-12 meses | I01<br> I06<br> I02 |  A1.9 <br> A6.3, A6.5<br> A2.10 | |
+| **OMS (Order Management)** | IBM Sterling OMS / Fluent Commerce | IBM / Fluent | 60% redução custos ops | 6-9 meses | I01<br> I03<br> I02<br> I08<br> I06 | A1.2, A1.4<br> A3.6<br> A2.7<br> A8.6<br> A6.7 | O 'OMS Fluent Lite' é um **'Quick Win' para a 'Gestão de Pedidos' (E02)**, visando uma **redução de 30% nos cancelamentos por ruptura**. Ele se alinha às atividades I01 A1.2 e A1.4, que tratam da implementação de OMS e integração de hub de pedidos |
+| **WMS (Manhattan)** | Manhattan Active WM | Manhattan | 40% eficiência logística | 8-12 meses | I01<br> I06<br> I02 |  A1.9 <br> A6.3, A6.5<br> A2.10 | A otimização da eficiência logística em 40% é suportada pelas atividades I01 A1.9 (integração Manhattan com ERP e remoção de legado) e I06 A6.3 (evolução dos **processos de fulfillment no Manhattan**) |
 | **PIM** | Akeneo PIM / Salsify | Akeneo / Salsify | 50% redução time-to-market | 4-6 meses | I03 | A3.2 | O **PIM Akeneo** é listado como um "Quick Win" estratégico para o Catálogo Unificado (E01), visando ter o catálogo pronto em 1/3 do tempo atual |
 | **CRM** | Sales/Service Cloud | Salesforce | 35% aumento conversão | 6-8 meses |I01<br> I02<br> I04<br> I05<br> I07<br> I08 | A1.1<br> A2.13<br> A4.8<br> A5.5<br> A7.3<br> A8.3, A8.7 | O **Salesforce CRM** é um "Quick Win" para a Visão Cliente (E04), visando aumentar a eficiência dos vendedores |
-| **TMS** | Manhattan Active TM | Manhattan | 25% redução custos frete | 6-9 meses | I01 | A1.3 | |
+| **TMS** | Manhattan Active TM | Manhattan | 25% redução custos frete | 6-9 meses | I01 | A1.3 | A solução de TMS, mencionada na atividade I01 A1.3, é fundamental para a construção de uma **torre de controle unificada** e o novo hub de fretes, visando uma **redução de 25% nos custos de frete** |
 | **Pricing Platform** | PROS / Zilliant | PROS / Zilliant | 20% aumento margem | 6-8 meses | I07 | A7.1, A7.4 | O **Pricing Dinâmico** é um "Quick Win" estrutural que busca aumentar a margem líquida |
-| **SCM/S&OP** | SAP IBP / Kinaxis | SAP / Kinaxis | 30% redução inventário | 9-12 meses | I01<br> I06 | A1.8<br> A6.1, A6.5, A6.10 | |
+| **SCM/S&OP** | SAP IBP / Kinaxis | SAP / Kinaxis | 30% redução inventário | 9-12 meses | I01<br> I06 | A1.8<br> A6.1, A6.5, A6.10 | Alinha-se às atividades I06 A6.1 e A6.5, focadas na **otimização do fluxo de abastecimento com inteligência logística** e automação de S&OP, e suporta Quick Wins como 'Demand Sensing' e 'Smart Replenishment' (E03) |
 
 ### 🟡 **RECOMENDAÇÃO HYBRID - CUSTOMIZAÇÃO FOCADA**
 
 | Sistema | Abordagem | Justificativa | Iniciativas | Atividades | Obs. |
 | --- | --- | --- | --- | --- | --- |
-| **Motor CDC** | Base FICO + Custom Rules | Regulamentação específica BR, diferenciação competitiva | I04 <br> I05<br> I12 | A4.8<br> A5.1, A5.2, A5.3<br> A12.5 | |
-| **Hub de Serviços** | ServiceNow + Custom Workflows | Processos únicos GCB, integrações legadas | I04 | A4.4, A4.6 | |
-| **Motor Recomendação** | AWS Personalize + Custom Models | Dados proprietários, diferenciação |  I03<br> I04 | A3.5<br> A4.2 | |
+| **Motor CDC** | Base FICO + Custom Rules | Regulamentação específica BR, diferenciação competitiva | I04 <br> I05<br> I12 | A4.8<br> A5.1, A5.2, A5.3<br> A12.5 | As atividades I05 A5.1, A5.2 e A5.3 detalham o **redesenho e revisão da jornada do motor de aprovação de CDC**, incluindo a habilitação para carrinho misto e múltiplos itens, reforçando a diferenciação e regulamentação específica do Brasil |
+| **Hub de Serviços** | ServiceNow + Custom Workflows | Processos únicos GCB, integrações legadas | I04 | A4.4, A4.6 | A atividade I04 A4.4 foca na definição de um **hub de serviços unificado e desacoplado do mainframe**, enquanto a A4.6 trata da configuração regional, complementando a justificativa de processos únicos GCB e integrações legadas |
+| **Motor Recomendação** | AWS Personalize + Custom Models | Dados proprietários, diferenciação |  I03<br> I04 | A3.5<br> A4.2 | As atividades I03 A3.5 e I04 A4.2 detalham o desenvolvimento de **motores de recomendação com AI para produtos de vitrine e serviços**, respectivamente, explorando dados proprietários para diferenciação |
 
 ### 🔴 **RECOMENDAÇÃO MAKE - APENAS DIFERENCIADORES**
 
@@ -79,15 +99,15 @@ CAMADA 3: INTEGRAÇÃO E MIDDLEWARE
 | Componente | Solução COTS | Benefício | Iniciativas | Atividades | Obs. |
 | --- | --- | --- | --- | --- | --- |
 | **API Gateway** | MuleSoft Anypoint / Kong Enterprise | Governança APIs, security | I09 | A9.1, A9.2, A9.4, A9.5 | O **Adyen Payment Hub** é um "Super Quick Win" e o **Gateway Pagamentos Unificado** é um "Quick Win" estratégico, com foco em aumentar a conversão |
-| **ESB/iPaaS** | MuleSoft / Boomi / Azure Logic Apps | Integrações pré-construídas | | | |
-| **Gateway Pagamentos** | Adyen / Stripe Connect | PCI compliance, métodos locais | | | |
+| **ESB/iPaaS** | MuleSoft / Boomi / Azure Logic Apps | Integrações pré-construídas | | | Componente essencial para as 'Integrações pré-construídas' e para gerenciar a complexidade das **integrações legadas**, incluindo as 'Integrações Mainframe' (Make) e garantindo a conectividade entre todas as camadas89 (informação sintetizada dos documentos).|
+| **Gateway Pagamentos** | Adyen / Stripe Connect | PCI compliance, métodos locais | | | O **Adyen Payment Hub** é um **'Super Quick Win' (Rank 1 - Pagamentos)** e o **Gateway Pagamentos Unificado** é um **'Quick Win' estratégico (Tier 1)**, com foco em **aumentar a conversão (+15% conversão = R$ 45M receita adicional)** e habilitar PIX, Apple Pay, Google Pay em todos os canais |
 | **Hub Conciliação** | Adyen Financial Platforms | Automação 95% conciliação | I02<br> I09<br> I12 | A2.4<br> A9.8<br> A12.3 | |
 
 ### 🟡 **HYBRID - CONFIGURAÇÃO INTENSIVA**
 
 | Sistema | Abordagem | Justificativa | Iniciativas | Atividades | Obs. |
 | --- | --- | --- | --- | --- | --- |
-|**Hub Fretes**| Plataforma base + integrações regionais | Integração dos canais com novo hub de fretes e construção de torre de controle unificada com solução de TMS" se alinha com o Hub Fretes | I01 | A1.3 |  |
+|**Hub Fretes**| Plataforma base + integrações regionais | Integração dos canais com novo hub de fretes e construção de torre de controle unificada com solução de TMS" se alinha com o Hub Fretes | I01 | A1.3 | Alinhado com a atividade I01 A1.3, que visa a **integração dos canais com o novo hub de fretes** e a construção de uma torre de controle unificada com solução de TMS |
 |**Hub Pedidos** | OMS COTS + orchestration customizada | Integração dos canais com hub de pedidos unificado e configurável entre canais e bandeiras" é diretamente relacionada ao Hub Pedidos | I01 | A1.4 | O "Orquestrador Pedidos" é um "Quick Win" para a Gestão de Pedidos (E02) visando uma experiência de checkout unificada |
 
 * * *
@@ -100,7 +120,7 @@ CAMADA 4: DADOS E ANALYTICS
 | Solução | Plataforma | ROI | Iniciativas | Atividades | Obs. |
 | --- | --- | --- | --- | --- | --- |
 | **Customer Data Platform** | Segment / Treasure Data | 40% melhoria segmentação | I01 | A1.1 | O CDP Segment é um "Quick Win" para a Visão Cliente (E04), com o objetivo de tornar as campanhas mais efetivas<br>A CDP + Segmentação Avançada é um "Quick Win" estrutural para efetividade de campanhas e personalização |
-| **Advanced Analytics** | Databricks / Snowflake | 50% redução time-to-insight | I01<br>I05<br> I06<br> I07 | A1.6<br>A5.4<br> A6.11<br> A7.5 | |
+| **Advanced Analytics** | Databricks / Snowflake | 50% redução time-to-insight | I01<br>I05<br> I06<br> I07 | A1.6<br>A5.4<br> A6.11<br> A7.5 | As atividades I01 A1.6, I05 A5.4, I06 A6.11 e I07 A7.5 indicam o uso de Advanced Analytics para diversas finalidades, como **assertividade da torre de controle, segmentação de ofertas, abastecimento automático e recomendação de ofertas** |
 | **BI/Dashboards** | Tableau / PowerBI | 60% redução relatórios manuais | | | Analytics em Tempo Real (Tableau/PowerBI + Snowflake) é um "Quick Win" estratégico, focado em decisões data-driven e otimização de estoque |
 | **ML/AI Platform** | AWS SageMaker / Azure ML | 30% aumento precisão modelos | I03 | A3.5 | "AI/ML avançado" é uma fase de otimização futura no roadmap |
 
@@ -109,7 +129,7 @@ CAMADA 4: DADOS E ANALYTICS
 | Sistema | Abordagem | Justificativa | Iniciativas | Atividades | Obs. |
 | --- | --- | --- | --- | --- | --- |
 |**Loyalty Engine** | Base Salesforce + regras customizadas | | I02<br> I04<br> I05 | A2.5, A2.13<br> A4.8<br> A5.5 | O Loyalty Unificado é um "Quick Win" para a Visão Cliente (E04), visando aumentar a frequência de compra de clientes VIP |
-|**Analytics CDC** | Plataforma ML + modelos proprietários | | I05 | A5.4 | |
+|**Analytics CDC** | Plataforma ML + modelos proprietários | | I05 | A5.4 | Diretamente ligado à atividade I05 A5.4, que foca no **'Advanced Analytics para segmentação de ofertas e uso de leads com CDC'**, utilizando plataforma ML e modelos proprietários |
 
 * * *
 
@@ -121,9 +141,9 @@ CAMADA 5: INFRAESTRUTURA E SEGURANÇA
 | Componente | Solução | Justificativa | Iniciativas | Atividades | Obs. |
 | --- | --- | --- | --- | --- | --- |
 | **Cloud Infrastructure** | AWS / Azure Multi-Region | Elasticidade, disaster recovery |I02 | A2.2 | Finalizar a migração de 10 funcionalidades legadas do Mainframe por meio de modernização para cloud" é uma atividade direta. A estratégia geral do blueprint é "Cloud First" e "AWS-FIRST" |
-| **Security/Identity** | Okta / Azure AD | Compliance, SSO omnichanal | I08 | A8.4 | |
+| **Security/Identity** | Okta / Azure AD | Compliance, SSO omnichanal | I08 | A8.4 | A atividade I08 A8.4, 'Implementação de Sistema de antifraude para programas de pontos', é um exemplo específico da aplicação desta solução, visando **compliance e SSO omnichanal** |
 | **Monitoring** | Datadog / New Relic | Observabilidade full-stack | | | O New Relic/Datadog é um "Super Quick Win" e o API Gateway + Monitoramento é um "Quick Win" estratégico, ambos visando visibilidade total dos sistemas e alertas proativos |
-| **Backup/DR** | Veeam Cloud / AWS Backup | RTO/RPO garantidos | | | |
+| **Backup/DR** | Veeam Cloud / AWS Backup | RTO/RPO garantidos | | | Componente crucial para **garantir 'RTO/RPO garantidos'**, essencial para a resiliência e continuidade de negócios em um ambiente 'Cloud First' (informação inferida dos documentos). |
 
 * * *
 
@@ -164,7 +184,23 @@ CAMADA 5: INFRAESTRUTURA E SEGURANÇA
 
 * * *
 
-## Tabela de Lista de Projetos
+#### **🎯 RECOMENDAÇÃO PARA RFP:**
+
+**Substituir estimativas por:**
+*   Fórmulas baseadas em métricas GCB reais
+*   Percentuais de melhoria (sem valores absolutos)
+*   Ranges baseados em cenários (conservador/otimista)
+*   Commitments de SLA técnicos mensuráveis
+
+#### **📋 TEMPLATE PARA VALORES REAIS:**
+
+    ROI_Iniciativa = (Melhoria_% × Baseline_GCB × Fator_Mercado) - Investimento
+    Success_Fee = %_Acordo × (Margem4_Realizada - Margem4_Baseline)
+    CAPEX_Total = Soma(Investimentos_Por_Iniciativa) + Overhead_Projeto
+
+* * *
+
+## ANEXO: Tabela de Lista de Projetos
 
 | Iniciativa | Atividade | Descrição | Estruturante | T-shirt | Dados | Front | Integração | Back |
 | --- | --- | --- | --- | --: | --: | --: | --: | --: |
