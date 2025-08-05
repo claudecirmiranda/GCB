@@ -1,6 +1,9 @@
 # GCB Blueprint - Arquitetura de Alto Nível
 ## Transformação Digital Full-Stack com foco em Buy vs Make
 
+### Voltar para [Blueprint](arquitetura_proposta.md) da Arquitetura Proposta.
+* * *
+
 ### GCB Blueprint - Arquitetura Transformação Digital
 <img width="3551" height="2889" alt="gcb_architecture_blueprint" src="https://github.com/user-attachments/assets/c970aa2c-a0d0-491a-ab06-760a27fc17dd" />
 
