@@ -23,17 +23,17 @@ CAMADA 1: EXPERIÊNCIA DO CLIENTE (Frontend/UI)
 
 ### 🟢 **RECOMENDAÇÃO BUY - COTS**
 
-| Aplicação | Solução COTS Sugerida | Fornecedor | Justificativa |
-| --- | --- | --- | --- |
-| **Portal E-commerce** | Commerce Cloud / Magento Commerce | Salesforce / Adobe | Plataforma madura, extensibilidade, marketplace nativo |
-| **Portal B2B** | B2B Commerce Cloud | Salesforce / SAP | Funcionalidades B2B específicas, catálogos diferenciados |
-| **PDV Multiskill** | Store Commerce / NCR Counterpoint | Microsoft / NCR | Omnichannel nativo, mobile-first |
-| **Portal Atendimento** | Service Cloud | Salesforce | Integração nativa com CRM, AI-powered |
-| **CMS Sellers** | Experience Manager | Adobe | Gestão de conteúdo empresarial, workflows |
+| Aplicação | Solução COTS Sugerida | Fornecedor | Justificativa | Iniciativas | Atividades | Obs. |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Portal E-commerce** | Commerce Cloud / Magento Commerce | Salesforce / Adobe | Plataforma madura, extensibilidade, marketplace nativo | I03 |  A3.4, A3.6, A3.7, A3.8, A3.12  |  A busca inteligente, como **Algolia** ou **Elasticsearch**, é um "Quick Win" estratégico que visa melhorar a conversão do e-commerce |
+| **Portal B2B** | B2B Commerce Cloud | Salesforce / SAP | Funcionalidades B2B específicas, catálogos diferenciados | I12 | A12.1, A12.2, A12.4 | |
+| **PDV Multiskill** | Store Commerce / NCR Counterpoint | Microsoft / NCR | Omnichannel nativo, mobile-first |I02 | A2.1, A2.8, A2.11, A2.12 | |
+| **Portal Atendimento** | Service Cloud | Salesforce | Integração nativa com CRM, AI-powered | I08 | A8.1 | |
+| **CMS Sellers** | Experience Manager | Adobe | Gestão de conteúdo empresarial, workflows | I03 | A3.9, A3.10 | |
 
 ### 🟡 **RECOMENDAÇÃO HYBRID**
 
-*   **App Mobile Rastreamento**: PWA baseada em APIs COTS
+*   **App Mobile Rastreamento**: PWA baseada em APIs COTS (I01 A1.10)
 *   **PDV Customizado**: Extensões sobre PDV base
 
 * * *
@@ -43,10 +43,10 @@ CAMADA 2: SISTEMAS CORE DE NEGÓCIO (Backend/Business Logic)
 
 ### 🟢 **RECOMENDAÇÃO BUY - COTS (ALTA PRIORIDADE)**
 
-| Sistema | Solução COTS | Fornecedor | ROI Estimado | Prazo Impl. |
-| --- | --- | --- | --- | --- |
-| **OMS (Order Management)** | IBM Sterling OMS / Fluent Commerce | IBM / Fluent | 60% redução custos ops | 6-9 meses |
-| **WMS (Manhattan)** | Manhattan Active WM | Manhattan | 40% eficiência logística | 8-12 meses |
+| Sistema | Solução COTS | Fornecedor | ROI Estimado | Prazo Impl. | Iniciativas | Atividades | Obs. |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **OMS (Order Management)** | IBM Sterling OMS / Fluent Commerce | IBM / Fluent | 60% redução custos ops | 6-9 meses | I01<br> I03<br> I02<br> I08<br> I06 | A1.2, A1.4<br> A3.6<br> A2.7<br> A8.6<br> A6.7 | |
+| **WMS (Manhattan)** | Manhattan Active WM | Manhattan | 40% eficiência logística | 8-12 meses | I01<br> I06<br> I02 |  A1.9 <br> A6.3, A6.5<br> A2.10 | |
 | **PIM** | Akeneo PIM / Salsify | Akeneo / Salsify | 50% redução time-to-market | 4-6 meses |
 | **CRM** | Sales/Service Cloud | Salesforce | 35% aumento conversão | 6-8 meses |
 | **TMS** | Manhattan Active TM | Manhattan | 25% redução custos frete | 6-9 meses |
