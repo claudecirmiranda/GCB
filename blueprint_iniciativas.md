@@ -33,8 +33,10 @@ CAMADA 1: EXPERIÊNCIA DO CLIENTE (Frontend/UI)
 
 ### 🟡 **RECOMENDAÇÃO HYBRID**
 
-*   **App Mobile Rastreamento**: PWA baseada em APIs COTS (I01 A1.10)
-*   **PDV Customizado**: Extensões sobre PDV base
+| Sistema | Abordagem | Justificativa | Iniciativas | Atividades | Obs. |
+| --- | --- | --- | --- | --- | --- |
+|**App Mobile Rastreamento**|PWA baseada em APIs COTS | | I01 | A1.10 | |
+|**PDV Customizado**|Extensões sobre PDV base | | |  | |
 
 * * *
 
@@ -47,24 +49,24 @@ CAMADA 2: SISTEMAS CORE DE NEGÓCIO (Backend/Business Logic)
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **OMS (Order Management)** | IBM Sterling OMS / Fluent Commerce | IBM / Fluent | 60% redução custos ops | 6-9 meses | I01<br> I03<br> I02<br> I08<br> I06 | A1.2, A1.4<br> A3.6<br> A2.7<br> A8.6<br> A6.7 | |
 | **WMS (Manhattan)** | Manhattan Active WM | Manhattan | 40% eficiência logística | 8-12 meses | I01<br> I06<br> I02 |  A1.9 <br> A6.3, A6.5<br> A2.10 | |
-| **PIM** | Akeneo PIM / Salsify | Akeneo / Salsify | 50% redução time-to-market | 4-6 meses |
-| **CRM** | Sales/Service Cloud | Salesforce | 35% aumento conversão | 6-8 meses |
-| **TMS** | Manhattan Active TM | Manhattan | 25% redução custos frete | 6-9 meses |
-| **Pricing Platform** | PROS / Zilliant | PROS / Zilliant | 20% aumento margem | 6-8 meses |
-| **SCM/S&OP** | SAP IBP / Kinaxis | SAP / Kinaxis | 30% redução inventário | 9-12 meses |
+| **PIM** | Akeneo PIM / Salsify | Akeneo / Salsify | 50% redução time-to-market | 4-6 meses | I03 | A3.2 | O **PIM Akeneo** é listado como um "Quick Win" estratégico para o Catálogo Unificado (E01), visando ter o catálogo pronto em 1/3 do tempo atual |
+| **CRM** | Sales/Service Cloud | Salesforce | 35% aumento conversão | 6-8 meses |I01<br> I02<br> I04<br> I05<br> I07<br> I08 | A1.1<br> A2.13<br> A4.8<br> A5.5<br> A7.3<br> A8.3, A8.7 | O **Salesforce CRM** é um "Quick Win" para a Visão Cliente (E04), visando aumentar a eficiência dos vendedores |
+| **TMS** | Manhattan Active TM | Manhattan | 25% redução custos frete | 6-9 meses | I01 | A1.3 | |
+| **Pricing Platform** | PROS / Zilliant | PROS / Zilliant | 20% aumento margem | 6-8 meses | I07 | A7.1, A7.4 | O **Pricing Dinâmico** é um "Quick Win" estrutural que busca aumentar a margem líquida |
+| **SCM/S&OP** | SAP IBP / Kinaxis | SAP / Kinaxis | 30% redução inventário | 9-12 meses | I01<br> I06 | A1.8<br> A6.1, A6.5, A6.10 | |
 
 ### 🟡 **RECOMENDAÇÃO HYBRID - CUSTOMIZAÇÃO FOCADA**
 
-| Sistema | Abordagem | Justificativa |
-| --- | --- | --- |
-| **Motor CDC** | Base FICO + Custom Rules | Regulamentação específica BR, diferenciação competitiva |
-| **Hub de Serviços** | ServiceNow + Custom Workflows | Processos únicos GCB, integrações legadas |
-| **Motor Recomendação** | AWS Personalize + Custom Models | Dados proprietários, diferenciação |
+| Sistema | Abordagem | Justificativa | Iniciativas | Atividades | Obs. |
+| --- | --- | --- | --- | --- | --- |
+| **Motor CDC** | Base FICO + Custom Rules | Regulamentação específica BR, diferenciação competitiva | I04 <br> I05<br> I12 | A4.8<br> A5.1, A5.2, A5.3<br> A12.5 | |
+| **Hub de Serviços** | ServiceNow + Custom Workflows | Processos únicos GCB, integrações legadas | I04 | A4.4, A4.6 | |
+| **Motor Recomendação** | AWS Personalize + Custom Models | Dados proprietários, diferenciação |  I03<br> I04 | A3.5<br> A4.2 | |
 
 ### 🔴 **RECOMENDAÇÃO MAKE - APENAS DIFERENCIADORES**
 
-*   **Configurações Regionais/Bandeiras**: Lógica de negócio única GCB
-*   **Integrações Mainframe**: Bridges temporários para migração
+*   **Configurações Regionais/Bandeiras**: Lógica de negócio única GCB (I04 A4.5)
+*   **Integrações Mainframe**: Bridges temporários para migração (I04 A4.6)
 
 * * *
 
@@ -73,17 +75,19 @@ CAMADA 3: INTEGRAÇÃO E MIDDLEWARE
 
 ### 🟢 **RECOMENDAÇÃO BUY - PLATAFORMA UNIFICADA**
 
-| Componente | Solução COTS | Benefício |
-| --- | --- | --- |
-| **API Gateway** | MuleSoft Anypoint / Kong Enterprise | Governança APIs, security |
-| **ESB/iPaaS** | MuleSoft / Boomi / Azure Logic Apps | Integrações pré-construídas |
-| **Gateway Pagamentos** | Adyen / Stripe Connect | PCI compliance, métodos locais |
-| **Hub Conciliação** | Adyen Financial Platforms | Automação 95% conciliação |
+| Componente | Solução COTS | Benefício | Iniciativas | Atividades | Obs. |
+| --- | --- | --- | --- | --- | --- |
+| **API Gateway** | MuleSoft Anypoint / Kong Enterprise | Governança APIs, security | I09 | A9.1, A9.2, A9.4, A9.5 | O **Adyen Payment Hub** é um "Super Quick Win" e o **Gateway Pagamentos Unificado** é um "Quick Win" estratégico, com foco em aumentar a conversão |
+| **ESB/iPaaS** | MuleSoft / Boomi / Azure Logic Apps | Integrações pré-construídas | | | |
+| **Gateway Pagamentos** | Adyen / Stripe Connect | PCI compliance, métodos locais | | | |
+| **Hub Conciliação** | Adyen Financial Platforms | Automação 95% conciliação | I02<br> I09<br> I12 | A2.4<br> A9.8<br> A12.3 | |
 
 ### 🟡 **HYBRID - CONFIGURAÇÃO INTENSIVA**
 
-*   **Hub Fretes**: Plataforma base + integrações regionais
-*   **Hub Pedidos**: OMS COTS + orchestration customizada
+| Sistema | Abordagem | Justificativa | Iniciativas | Atividades | Obs. |
+| --- | --- | --- | --- | --- | --- |
+|**Hub Fretes**| Plataforma base + integrações regionais | Integração dos canais com novo hub de fretes e construção de torre de controle unificada com solução de TMS" se alinha com o Hub Fretes | I01 | A1.3 |  |
+|**Hub Pedidos** | OMS COTS + orchestration customizada | Integração dos canais com hub de pedidos unificado e configurável entre canais e bandeiras" é diretamente relacionada ao Hub Pedidos | I01 | A1.4 | O "Orquestrador Pedidos" é um "Quick Win" para a Gestão de Pedidos (E02) visando uma experiência de checkout unificada |
 
 * * *
 
