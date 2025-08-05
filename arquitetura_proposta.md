@@ -22,6 +22,9 @@ Elas são baseadas em:
 
 Portanto, essas informações servem como um **guia inicial e um ponto de partida para discussão**. Os **valores reais e as decisões finais** para "Solução COTS Sugerida", "Fornecedor", "ROI Estimado" e "Prazo Impl." devem ser definidos com base nas métricas reais do GCB, no orçamento específico do projeto, em homologações regulatórias e em negociações contratuais detalhadas. O próprio _blueprint_ recomenda substituir estimativas por fórmulas baseadas em métricas reais, percentuais de melhoria ou ranges baseados em cenários.
 
+### Veja os [Diagramas](diagramas.md) arquiteturais
+* * *
+
 EXECUTIVE SUMMARY - RECOMENDAÇÕES ESTRATÉGICAS
 ----------------------------------------------
 
