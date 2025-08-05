@@ -96,17 +96,19 @@ CAMADA 4: DADOS E ANALYTICS
 
 ### 🟢 **RECOMENDAÇÃO BUY - CLOUD NATIVE**
 
-| Solução | Plataforma | ROI |
-| --- | --- | --- |
-| **Customer Data Platform** | Segment / Treasure Data | 40% melhoria segmentação |
-| **Advanced Analytics** | Databricks / Snowflake | 50% redução time-to-insight |
-| **BI/Dashboards** | Tableau / PowerBI | 60% redução relatórios manuais |
-| **ML/AI Platform** | AWS SageMaker / Azure ML | 30% aumento precisão modelos |
+| Solução | Plataforma | ROI | Iniciativas | Atividades | Obs. |
+| --- | --- | --- | --- | --- | --- |
+| **Customer Data Platform** | Segment / Treasure Data | 40% melhoria segmentação | I01 | A1.1 | O CDP Segment é um "Quick Win" para a Visão Cliente (E04), com o objetivo de tornar as campanhas mais efetivas<br>A CDP + Segmentação Avançada é um "Quick Win" estrutural para efetividade de campanhas e personalização |
+| **Advanced Analytics** | Databricks / Snowflake | 50% redução time-to-insight | I01<br>I05<br> I06<br> I07 | A1.6<br>A5.4<br> A6.11<br> A7.5 | |
+| **BI/Dashboards** | Tableau / PowerBI | 60% redução relatórios manuais | | | Analytics em Tempo Real (Tableau/PowerBI + Snowflake) é um "Quick Win" estratégico, focado em decisões data-driven e otimização de estoque |
+| **ML/AI Platform** | AWS SageMaker / Azure ML | 30% aumento precisão modelos | I03 | A3.5 | "AI/ML avançado" é uma fase de otimização futura no roadmap |
 
 ### 🟡 **HYBRID - DADOS PROPRIETÁRIOS**
 
-*   **Loyalty Engine**: Base Salesforce + regras customizadas
-*   **Analytics CDC**: Plataforma ML + modelos proprietários
+| Sistema | Abordagem | Justificativa | Iniciativas | Atividades | Obs. |
+| --- | --- | --- | --- | --- | --- |
+|**Loyalty Engine** | Base Salesforce + regras customizadas | | I02<br> I04<br> I05 | A2.5, A2.13<br> A4.8<br> A5.5 | O Loyalty Unificado é um "Quick Win" para a Visão Cliente (E04), visando aumentar a frequência de compra de clientes VIP |
+|**Analytics CDC** | Plataforma ML + modelos proprietários | | I05 | A5.4 | |
 
 * * *
 
@@ -115,12 +117,12 @@ CAMADA 5: INFRAESTRUTURA E SEGURANÇA
 
 ### 🟢 **RECOMENDAÇÃO BUY - CLOUD FIRST**
 
-| Componente | Solução | Justificativa |
-| --- | --- | --- |
-| **Cloud Infrastructure** | AWS / Azure Multi-Region | Elasticidade, disaster recovery |
-| **Security/Identity** | Okta / Azure AD | Compliance, SSO omnichanal |
-| **Monitoring** | Datadog / New Relic | Observabilidade full-stack |
-| **Backup/DR** | Veeam Cloud / AWS Backup | RTO/RPO garantidos |
+| Componente | Solução | Justificativa | Iniciativas | Atividades | Obs. |
+| --- | --- | --- | --- | --- | --- |
+| **Cloud Infrastructure** | AWS / Azure Multi-Region | Elasticidade, disaster recovery |I02 | A2.2 | Finalizar a migração de 10 funcionalidades legadas do Mainframe por meio de modernização para cloud" é uma atividade direta. A estratégia geral do blueprint é "Cloud First" e "AWS-FIRST" |
+| **Security/Identity** | Okta / Azure AD | Compliance, SSO omnichanal | I08 | A8.4 | |
+| **Monitoring** | Datadog / New Relic | Observabilidade full-stack | | | O New Relic/Datadog é um "Super Quick Win" e o API Gateway + Monitoramento é um "Quick Win" estratégico, ambos visando visibilidade total dos sistemas e alertas proativos |
+| **Backup/DR** | Veeam Cloud / AWS Backup | RTO/RPO garantidos | | | |
 
 * * *
 
