@@ -91,9 +91,7 @@ CAMADA 1 – Experiência do Cliente (Frontend/UI)
 | Suporte & SLA | 7 | Qualidade do suporte comercial e SLA oferecido | 5 | 5 | 4 | 4 | 4 | 3 | 3 |
 | -  | -  | **Score Ponderado**  |  4,92  | 4,82  | **4,94**  | **4,94**  | 4,69  | 4,08  | 3,94  |
 
-### Sugestão baseada no resultado do tradeoff
-
-* * *
+## Sugestão baseada no resultado do trade-off
 
 > Após a avaliação criteriosa das soluções com base nos critérios técnicos definidos — incluindo maturidade do produto, aderência local, custo total de propriedade, escalabilidade, segurança e suporte — o resultado do tradeoff indicou as seguintes soluções com melhor equilíbrio entre qualidade e adequação para cada aplicação da Camada 1 – Experiência do Cliente (Frontend/UI):
 > 1.  **Portal E-commerce:** VTEX (pontuação 4,90) — destacada pela maturidade consolidada, suporte local forte e excelente capacidade de escalabilidade.
@@ -108,7 +106,6 @@ CAMADA 1 – Experiência do Cliente (Frontend/UI)
 >     
 > Recomenda-se, portanto, priorizar essas soluções para a implementação, visando maximizar o retorno do investimento, reduzir riscos operacionais e garantir aderência local, qualidade técnica e escalabilidade.
 
-* * *
 * * *
 
 CAMADA 2 – Sistemas Core de Negócio
@@ -234,6 +231,34 @@ CAMADA 2 – Sistemas Core de Negócio
 | Inovação & Roadmap | 5 | Atualizações frequentes e roadmap tecnológico | 4 | 4 | 4 | 3 | 3 |
 |  |  | **Score Ponderado** | **5,02**  | 4,87  | 4,74  | 3,76  | 3,87  |
 
+## Sugestão baseada no resultado do trade-off
+
+> Com base na análise comparativa e no resultado do trade-off, recomenda-se a adoção das seguintes soluções para cada componente da camada de sistemas core de negócio. A escolha considera a combinação de desempenho, aderência aos requisitos, flexibilidade e potencial de integração no ecossistema de TI da organização.
+>
+>1. **OMS (Order Management System)** — *IBM Sterling OMS* ou *Manhattan Active OMS* (pontuação: 5,02)  
+   Ambas as opções oferecem robustez para gestão de pedidos omnichannel, escalabilidade e capacidade de integração com plataformas de e-commerce e ERP.
+>
+>2. **WMS (Warehouse Management System)** — *Manhattan Active WM* ou *SAP EWM* (pontuação: 5,02)  
+   Sistemas consolidados para otimização de operações de armazenagem, gestão de inventário em tempo real e suporte a processos automatizados.
+>
+>3. **PIM (Product Information Management)** — *Salsify* (pontuação: 4,87)  
+>   Solução com forte usabilidade e recursos de centralização, enriquecimento e distribuição de informações de produto para múltiplos canais.
+>
+>4. **CRM (Customer Relationship Management)** — *Salesforce Sales/Service Cloud* (pontuação: 4,87)  
+>   Plataforma líder em gestão de relacionamento, com recursos avançados para atendimento, vendas e automação de processos comerciais.
+>
+>5. **TMS (Transportation Management System)** — *SAP TM* ou *Oracle TM* (pontuação: 5,02)  
+>   Sistemas com capacidade comprovada de planejamento, execução e monitoramento de transporte, integrando fornecedores e operadores logísticos.
+>
+>6. **Pricing Platform** — *PROS* ou *Vendavo* (pontuação: 5,00)  
+>   Ferramentas especializadas em gestão estratégica de preços, com recursos de otimização dinâmica e análise preditiva.
+>
+>7. **SCM/S&OP (Supply Chain Management / Sales & Operations Planning)** — *SAP IBP* (pontuação: 5,02)  
+>   Solução integrada para planejamento colaborativo da cadeia de suprimentos, alinhando demanda, suprimento e capacidade operacional.
+>
+>**Conclusão:**  
+>A seleção prioriza soluções consolidadas no mercado, com alta capacidade de integração e suporte a operações complexas. Nos casos em que há duas opções com mesma pontuação, recomenda-se aprofundar a análise considerando fatores como custo total de propriedade (TCO), experiência prévia da equipe e estratégia de relacionamento com fornecedores.
+
 * * *
 
 CAMADA 3 – Integração e Middleware
@@ -259,7 +284,7 @@ CAMADA 3 – Integração e Middleware
 | Custo Total de Propriedade (TCO) | 6 | Custos de licença, implantação e operação | 3 | 3 | 4 | 4 | 3 | 3 | 2 |
 | Suporte & SLA | 7 | Qualidade do suporte e acordos de nível de serviço | 5 | 5 | 5 | 5 | 4 | 3 | 2 |
 | Inovação & Roadmap | 5 | Frequência de atualizações e roadmap tecnológico | 4 | 4 | 4 | 4 | 3 | 3 | 3 |
-
+|  |  | **Score Ponderado** | 4,54  | 4,41  | **4,74**  | **4,74**  | 3,62  | 2,88  | 2,70  |
 * * *
 
 ### ESB / iPaaS
@@ -275,6 +300,7 @@ CAMADA 3 – Integração e Middleware
 | Custo Total de Propriedade (TCO) | 6 | Custos de licença e operação | 3 | 3 | 4 | 3 | 3 | 2 | 2 |
 | Suporte & SLA | 7 | Qualidade do suporte e SLA | 5 | 5 | 5 | 4 | 4 | 3 | 3 |
 | Inovação & Roadmap | 5 | Frequência de melhorias e inovação tecnológica | 4 | 4 | 4 | 3 | 3 | 3 | 3 |
+|  |  | **Score Ponderado** | 4,54  | 4,41  | **4,74**  | 3,62  | 3,62  | 2,80  | 2,80  |
 
 * * *
 
@@ -291,6 +317,7 @@ CAMADA 3 – Integração e Middleware
 | Custo Total de Propriedade (TCO) | 6 | Taxas, implementação e manutenção | 3 | 3 | 3 | 4 | 4 | 4 |
 | Suporte & SLA | 7 | Suporte técnico e níveis de serviço | 5 | 5 | 5 | 4 | 4 | 3 |
 | Inovação & Roadmap | 5 | Atualizações e evolução dos meios de pagamento | 4 | 4 | 4 | 3 | 3 | 3 |
+|  |  | **Score Ponderado** | **4,54**  | **4,54**  | **4,54**  | 4,04  | 3,93  | 3,09  | 2,80  |
 
 * * *
 
@@ -307,6 +334,21 @@ CAMADA 3 – Integração e Middleware
 | Custo Total de Propriedade (TCO) | 6 | Custos de operação e manutenção | 3 | 3 | 3 | 3 |
 | Suporte & SLA | 7 | Qualidade do suporte e níveis de serviço | 4 | 4 | 3 | 3 |
 | Inovação & Roadmap | 5 | Atualizações e melhorias constantes | 3 | 3 | 3 | 3 |
+|  |  | **Score Ponderado** | **4,10**  | **4,10**  | 3,26  | 3,38  |
+
+## Sugestão baseada no resultado do trade-off
+
+> Após a análise das opções para a camada de integração e middleware, considerando critérios como compatibilidade com múltiplos sistemas, escalabilidade, segurança, custo total de propriedade e aderência às melhores práticas do mercado, o tradeoff apontou as seguintes soluções como mais adequadas.
+> 
+> **API Gateway** – **AWS API Gateway** e **Azure API Management** (4,74) foram avaliados como altamente robustos, com recursos avançados de gestão e segurança de APIs, oferecendo fácil escalabilidade e integração nativa com seus respectivos ecossistemas em nuvem.
+> 
+> **ESB / iPaaS** – **Azure Logic Apps** (4,74) se destacou pela flexibilidade, modelo low-code e forte integração com sistemas corporativos e serviços externos, favorecendo rápida implementação de fluxos complexos.
+> 
+> **Gateway de Pagamentos** – **Adyen**, **Stripe Connect** e **PayPal Braintree** (4,54) oferecem cobertura global, múltiplos métodos de pagamento e alta segurança, além de capacidades de customização para diferentes modelos de negócio.
+> 
+> **Hub de Conciliação** – **Adyen Financial Platforms** e **Stripe Financial Services** apresentaram soluções integradas para gestão financeira e reconciliação automatizada, garantindo confiabilidade e redução de erros manuais.
+> 
+> Considerando o equilíbrio entre inovação, confiabilidade e integração transparente, recomenda-se a priorização destas soluções para sustentar o ecossistema de integração e middleware do projeto, garantindo conectividade eficiente entre os sistemas core e as aplicações de experiência do cliente.
 
 * * *
 
@@ -333,6 +375,7 @@ CAMADA 4 – Dados e Analytics
 | Custo Total de Propriedade (TCO) | 6 | Licenças, implementação e operação | 3 | 4 | 4 | 4 | 4 |
 | Suporte & SLA | 7 | Qualidade do suporte técnico e níveis de serviço | 5 | 4 | 3 | 3 | 3 |
 | Inovação & Roadmap | 5 | Frequência de atualizações e evolução tecnológica | 4 | 4 | 3 | 3 | 3 |
+|  |  | **Score Ponderado** | **4,65**  | 4,24  | 3,57  | 3,46  | 3,46  |
 
 * * *
 
@@ -349,6 +392,7 @@ CAMADA 4 – Dados e Analytics
 | Custo Total de Propriedade (TCO) | 6 | Custos de licença, operação e manutenção | 3 | 3 | 3 | 3 | 3 |
 | Suporte & SLA | 7 | Suporte técnico e SLA | 5 | 5 | 5 | 5 | 5 |
 | Inovação & Roadmap | 5 | Frequência de melhorias e evolução tecnológica | 5 | 5 | 5 | 5 | 5 |
+|  |  | **Score Ponderado** | 4,61  | 4,61  | **4,72**  | **4,72**  | **4,72**  |
 
 * * *
 
@@ -365,6 +409,7 @@ CAMADA 4 – Dados e Analytics
 | Custo Total de Propriedade (TCO) | 6 | Licença, implantação e manutenção | 4 | 3 | 4 | 3 | 3 |
 | Suporte & SLA | 7 | Qualidade do suporte e SLA | 5 | 5 | 5 | 4 | 4 |
 | Inovação & Roadmap | 5 | Frequência de atualizações e novidades | 4 | 4 | 4 | 3 | 3 |
+|  |  | **Score Ponderado** | **4,84**  | 4,75  | **4,84**  | 3,84  | 3,84  |
 
 * * *
 
@@ -381,6 +426,21 @@ CAMADA 4 – Dados e Analytics
 | Custo Total de Propriedade (TCO) | 6 | Custos de licença e operação | 3 | 3 | 4 | 3 | 3 |
 | Suporte & SLA | 7 | Suporte técnico e níveis de serviço | 5 | 5 | 4 | 4 | 3 |
 | Inovação & Roadmap | 5 | Frequência de atualizações e inovação | 5 | 5 | 4 | 4 | 3 |
+|  |  | **Score Ponderado** | **4,72**  | **4,72**  | 4,00  | 3,79  | 3,00  |
+
+## Sugestão baseada no resultado do tradeoff**
+
+> Com base na análise comparativa dos critérios de desempenho, escalabilidade, integração, custo e maturidade de mercado, foram selecionadas as soluções mais aderentes para a camada de Dados e Analytics.
+> 
+> **Customer Data Platform (CDP)** – **Salesforce CDP** (4,65) foi escolhida pela sua forte capacidade de unificação de dados de clientes, integração nativa com múltiplos canais e ferramentas de CRM, além de funcionalidades avançadas de segmentação e personalização.
+> 
+> **Advanced Analytics** – **Google BigQuery**, **AWS Redshift** e **Azure Synapse** (4,72) se destacaram como data warehouses escaláveis e de alta performance, permitindo processamento massivo de dados com integração nativa aos ecossistemas das principais nuvens.
+> 
+> **BI / Dashboards** – **Power BI** e **Qlik Sense** (4,84) apresentaram as melhores avaliações por oferecerem visualizações ricas, conectividade com múltiplas fontes e recursos avançados de análise interativa, suportando tanto necessidades executivas quanto operacionais.
+> 
+> **ML / AI Platform** – **AWS SageMaker** e **Azure ML** (4,72) foram indicadas por sua capacidade de orquestrar todo o ciclo de vida de modelos de Machine Learning, desde a preparação de dados até a implantação, com alta integração a pipelines e serviços de nuvem.
+> 
+> Ao priorizar essas soluções, a camada de Dados e Analytics será capaz de fornecer insights estratégicos em tempo real, apoiar decisões baseadas em dados e potencializar a personalização de produtos e serviços.
 
 * * *
 
@@ -406,6 +466,7 @@ CAMADA 5 – Infraestrutura e Segurança
 | Custo Total de Propriedade (TCO) | 7 | Custos de licenciamento, operação e manutenção | 3 | 3 | 3 | 3 | 3 |
 | Suporte & SLA | 8 | Suporte técnico, documentação e SLA | 5 | 5 | 5 | 4 | 4 |
 | Inovação & Roadmap | 7 | Frequência de atualizações e evolução tecnológica | 5 | 5 | 5 | 3 | 3 |
+|  |  | **Score Ponderado** | **4,68**  | **4,68**  | **4,68**  | 3,55  | 3,55  |
 
 * * *
 
@@ -421,6 +482,7 @@ CAMADA 5 – Infraestrutura e Segurança
 | Custo Total de Propriedade (TCO) | 6 | Custos de licença, operação e manutenção | 3 | 3 | 3 | 3 | 3 | 3 | 3 |
 | Suporte & SLA | 7 | Qualidade do suporte e SLA | 5 | 5 | 4 | 3 | 3 | 3 | 3 |
 | Inovação & Roadmap | 5 | Frequência de melhorias e evolução tecnológica | 4 | 4 | 4 | 3 | 3 | 3 | 3 |
+|  |  | **Score Ponderado** | **4,60**  | **4,60**  | 3,95  | 3,32  | 3,17  | 3,17  | 3,17  |
 
 * * *
 
@@ -436,6 +498,7 @@ CAMADA 5 – Infraestrutura e Segurança
 | Custo Total de Propriedade (TCO) | 6 | Custos de licença e operação | 3 | 3 | 3 | 3 | 3 | 2 | 2 |
 | Suporte & SLA | 7 | Qualidade do suporte e SLA | 5 | 5 | 5 | 4 | 4 | 3 | 3 |
 | Inovação & Roadmap | 5 | Frequência de melhorias e atualizações | 4 | 5 | 5 | 4 | 4 | 3 | 3 |
+|  |  | **Score Ponderado** | 4,46  | **4,80**  | **4,80**  | 3,90  | 3,90  | 2,90  | 2,90  |
 
 * * *
 
@@ -450,7 +513,7 @@ CAMADA 5 – Infraestrutura e Segurança
 | Custo Total de Propriedade (TCO) | 6 | Custos operacionais, licenças e manutenção | 3 | 3 | 3 | 3 | 3 |
 | Suporte & SLA | 7 | Qualidade do suporte e SLA | 5 | 5 | 4 | 4 | 3 |
 | Inovação & Roadmap | 5 | Atualizações, novas funcionalidades e roadmap | 4 | 4 | 4 | 4 | 3 |
-| - | - | **Score Ponderado** | **5,06**    | **4,92**| **4,44**   | **4,44**     | **3,42**  |
+|  |  | Score Ponderado | **4,36**  | **4,36**  | 3,88  | 3,88  | 3,00  |
 
 
 * * *
