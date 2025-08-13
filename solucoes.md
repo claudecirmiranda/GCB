@@ -136,6 +136,7 @@ CAMADA 2 – Sistemas Core de Negócio
 | Custo Total de Propriedade (TCO) | 6 | Licença, implementação, manutenção e operação | 3 | 3 | 4 | 3 | 4 |
 | Suporte & SLA | 7 | Qualidade do suporte e acordos de nível de serviço | 5 | 5 | 4 | 4 | 3 |
 | Inovação & Roadmap | 5 | Frequência de novas funcionalidades e aderência a tendências | 4 | 4 | 4 | 5 | 4 |
+|  |  | **Score Ponderado** | **5,02**  | **5,02**  | 4,37  | 4,35  | 3,33  | 0,00  | 0,00  |
 
 * * *
 
@@ -151,6 +152,7 @@ CAMADA 2 – Sistemas Core de Negócio
 | Custo Total de Propriedade (TCO) | 6 | Custos de licença, implantação e operação | 3 | 3 | 4 | 4 | 4 |
 | Suporte & SLA | 7 | Qualidade e eficiência do suporte | 5 | 5 | 4 | 3 | 3 |
 | Inovação & Roadmap | 5 | Atualizações e inovações constantes | 4 | 4 | 4 | 3 | 3 |
+|  |  | **Score Ponderado** | **5,02**  | **5,02**  | 4,54  | 3,56  | 3,56  |
 
 * * *
 
@@ -166,6 +168,7 @@ CAMADA 2 – Sistemas Core de Negócio
 | Custo Total de Propriedade (TCO) | 6 | Custos de licença, manutenção e operação | 3 | 4 | 5 | 4 | 4 | 4 |
 | Suporte & SLA | 7 | Qualidade do suporte e SLA | 4 | 5 | 4 | 3 | 3 | 3 |
 | Inovação & Roadmap | 5 | Frequência de atualizações e recursos novos | 4 | 4 | 4 | 3 | 3 | 3 |
+|  |  | **Score Ponderado** | **4,87**  | 4,65  | 4,61  | 4,15  | 3,37  | 3,24  |
 
 * * *
 
@@ -181,6 +184,7 @@ CAMADA 2 – Sistemas Core de Negócio
 | Custo Total de Propriedade (TCO) | 6 | Custos de licença, implantação e manutenção | 3 | 3 | 3 | 4 | 4 | 5 |
 | Suporte & SLA | 7 | Qualidade e agilidade do suporte | 5 | 5 | 4 | 4 | 3 | 3 |
 | Inovação & Roadmap | 5 | Atualizações, inovações e roadmap | 5 | 4 | 4 | 4 | 3 | 3 |
+|  |  | **Score Ponderado** | **5,24**  | 5,15 | 4,26  | 4,22  | 3,39  | 3,50  |
 
 * * *
 
@@ -196,6 +200,7 @@ CAMADA 2 – Sistemas Core de Negócio
 | Custo Total de Propriedade (TCO) | 6 | Custos totais de licenciamento e operação | 3 | 3 | 3 | 3 | 4 |
 | Suporte & SLA | 7 | Qualidade e eficiência do suporte | 5 | 5 | 5 | 5 | 3 |
 | Inovação & Roadmap | 5 | Frequência de melhorias e alinhamento tecnológico | 4 | 4 | 4 | 4 | 3 |
+|  |  | **Score Ponderado** | 4,87  | 4,87  | **5,02**  | **5,02**  | 3,87  |
 
 * * *
 
@@ -211,6 +216,7 @@ CAMADA 2 – Sistemas Core de Negócio
 | Custo Total de Propriedade (TCO) | 6 | Custos de licenciamento, implementação e manutenção | 3 | 3 | 4 | 4 | 3 |
 | Suporte & SLA | 7 | Qualidade do suporte e acordos de nível de serviço | 5 | 5 | 4 | 4 | 3 |
 | Inovação & Roadmap | 5 | Frequência de atualizações e roadmap | 4 | 4 | 4 | 4 | 4 |
+|  |  | **Score Ponderado** | **5,00**  | **5,00**  | 4,22  | 4,22  | 4,11  |
 
 * * *
 
@@ -226,8 +232,8 @@ CAMADA 2 – Sistemas Core de Negócio
 | Custo Total de Propriedade (TCO) | 6 | Custos totais de licença, implementação e manutenção | 3 | 3 | 3 | 3 | 4 |
 | Suporte & SLA | 7 | Qualidade do suporte e níveis de serviço | 5 | 5 | 4 | 3 | 3 |
 | Inovação & Roadmap | 5 | Atualizações frequentes e roadmap tecnológico | 4 | 4 | 4 | 3 | 3 |
+|  |  | **Score Ponderado** | **5,02**  | 4,87  | 4,74  | 3,76  | 3,87  |
 
-* * *
 * * *
 
 CAMADA 3 – Integração e Middleware
