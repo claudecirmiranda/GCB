@@ -428,7 +428,7 @@ CAMADA 4 – Dados e Analytics
 | Inovação & Roadmap | 5 | Frequência de atualizações e inovação | 5 | 5 | 4 | 4 | 3 |
 |  |  | **Score Ponderado** | **4,72**  | **4,72**  | 4,00  | 3,79  | 3,00  |
 
-## Sugestão baseada no resultado do tradeoff**
+## Sugestão baseada no resultado do tradeoff
 
 > Com base na análise comparativa dos critérios de desempenho, escalabilidade, integração, custo e maturidade de mercado, foram selecionadas as soluções mais aderentes para a camada de Dados e Analytics.
 > 
@@ -515,6 +515,21 @@ CAMADA 5 – Infraestrutura e Segurança
 | Inovação & Roadmap | 5 | Atualizações, novas funcionalidades e roadmap | 4 | 4 | 4 | 4 | 3 |
 |  |  | Score Ponderado | **4,36**  | **4,36**  | 3,88  | 3,88  | 3,00  |
 
+## Sugestão baseada no resultado do tradeoff
+
+> Com base na análise comparativa dos critérios de desempenho, escalabilidade, integração, custo e maturidade de mercado, foram selecionadas as soluções mais aderentes para a camada de Infraestrutura e Segurança.
+> 
+> **Cloud Infrastructure** – **AWS**, **Azure** e **Google Cloud** (4,68) foram escolhidas por oferecerem alta disponibilidade, escalabilidade elástica, ampla cobertura geográfica e ecossistemas robustos de serviços, permitindo suportar workloads críticos com segurança e performance.
+> 
+> **Security / Identity** – **Okta** e **Azure AD** (4,6) se destacaram por sua capacidade de gerenciamento centralizado de identidades, autenticação multifator, integração com múltiplos aplicativos e suporte a padrões modernos de segurança, garantindo controle e conformidade.
+> 
+> **Monitoring** – **Dynatrace** e **Splunk Observability** (4,8) foram indicadas pela excelência na observabilidade full-stack, monitoramento proativo e detecção inteligente de anomalias, reduzindo tempo de resposta a incidentes e melhorando a experiência do usuário.
+> 
+> **Backup / DR** – **Veeam Cloud** e **Rubrik** (4,36) foram selecionadas por sua confiabilidade na proteção e recuperação de dados, automação de processos e suporte a ambientes híbridos. Apesar da pontuação individual inferior à de Cloud Infrastructure, recomenda-se considerar soluções de Backup / DR integradas ao mesmo provedor de nuvem para simplificar a gestão, reduzir latência e potencializar a segurança.
+>
+> **Recomendação:** Sempre que possível, alinhar a solução de Backup e Disaster Recovery ao mesmo provedor de nuvem escolhido para a infraestrutura principal. Essa abordagem reduz complexidade de gestão, diminui a latência nas operações de restauração e mantém políticas de segurança e conformidade unificadas. Adoção de provedores distintos deve ser considerada apenas em casos de exigências regulatórias, políticas de continuidade que demandem isolamento de plataformas ou estratégias específicas de multi-cloud.
+> 
+> Ao priorizar essas soluções, a camada de Infraestrutura e Segurança proporcionará bases tecnológicas resilientes, protegidas e escaláveis, garantindo a continuidade dos serviços e a proteção de dados críticos da organização.
 
 * * *
 Fórmula para cálculo do score ponderado (pontuação final)
