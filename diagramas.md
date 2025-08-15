@@ -5,7 +5,7 @@
 * * *
 
 ### GCB Blueprint - Arquitetura Transformação Digital
-<img width="3551" height="2889" alt="gcb_architecture_blueprint" src="https://github.com/user-attachments/assets/c970aa2c-a0d0-491a-ab06-760a27fc17dd" />
+<img width="3551" height="2889" alt="gcb_architecture_blueprint" src="https://github.com/user-attachments/assets/8831e946-cdce-458f-a8df-31ebf19295d8" />
 
 
 ### GCB Quick Wins - Implementação Faseada
