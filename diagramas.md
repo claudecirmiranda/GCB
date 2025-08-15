@@ -9,4 +9,5 @@
 
 
 ### GCB Quick Wins - Implementação Faseada
-<img width="1407" height="2692" alt="gcb_quick_wins_phases" src="https://github.com/user-attachments/assets/e4c122dc-9602-4d9d-aae1-6be542faf01b" />
+<img width="1725" height="2692" alt="gcb_quick_wins_phases" src="https://github.com/user-attachments/assets/7429cbd1-cfa0-4503-ab65-5e019a4d8999" />
+
