@@ -4,7 +4,7 @@ A proposta **responde diretamente** às cinco principais oportunidades de evol
 
 ### ✅ **1. Aderência ao contexto CB28**
 
-*   O documento reforça a **customização alinhada ao roadmap do GCB**, evitando generalizações.
+*   A proposta reforça a **customização alinhada ao roadmap do GCB**, evitando generalizações.
 *   Há destaque para a **Arquitetura de Referência** focada em AWS, com flexibilidade para ambientes híbridos.
 *   A jornada de modernização está **alinhada às 4 Iniciativas Estruturantes (E01–E04)** do GCB.
 
@@ -28,7 +28,7 @@ A proposta **responde diretamente** às cinco principais oportunidades de evol
 
 ### ✅ **4. Continuidade e SLAs**
 
-*   O documento detalha práticas de **SRE, SLAs, SLOs, observabilidade e monitoramento contínuo**.
+*   A proposta detalha práticas de **SRE, SLAs, SLOs, observabilidade e monitoramento contínuo**.
 *   Há estratégias de **handover**, com rituais de disseminação de conhecimento e feedback contínuo.
 *   Ferramentas como **Prometheus, Grafana, Dynatrace, Azure DevOps, Jira** são citadas como suporte à governança.
 
